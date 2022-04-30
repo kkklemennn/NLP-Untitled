@@ -51,10 +51,32 @@ def get_common_entities_stanza(text):
 	doc = ner_spacy_stanza_tagger(text)
 	#all_entities = doc.ents
 	all_entities =  []
-	for token in doc:
+	# for token in doc:
+	# 	if token.ent_type_ == "PERSON":
+	# 		all_entities.append(token.text)
+	# 	print(token.text, token.lemma_, token.pos_, token.dep_, token.ent_type_)
+
+	for index, token in enumerate(doc):
 		if token.ent_type_ == "PERSON":
-			all_entities.append(token.text)
-		#print(token.text, token.lemma_, token.pos_, token.dep_, token.ent_type_)
+			current_person = []
+			current_person.append(token.text)
+			# print(index, token.text)
+			idx = index + 1
+			next = doc[idx]
+			while next.ent_type_ == "PERSON":
+				current_person.append(next.text)
+				idx += 1
+				next = doc[idx]
+			current_person = ' '.join([str(item) for item in current_person])
+
+			# Check if substring is in list
+			flag = False
+			for el in all_entities:
+				if current_person in el:
+					flag = True
+			if not flag:
+				all_entities.append(current_person)
+
 	#print("Unprocessed -> ", all_entities)
 	# Transform Span object to list, make lowercase
 	filtered_list = [entity.lower() for entity in all_entities]
