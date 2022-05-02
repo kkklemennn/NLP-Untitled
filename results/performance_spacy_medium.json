@@ -1,0 +1,127 @@
+{
+    "Hills Like White Elephants.txt": {
+        "entities": {
+            "ernest hemingway": 2,
+            "elephants": 3,
+            "jig": 2
+        },
+        "runtime": 1.0623218000000634
+    },
+    "Leiningen Versus the Ants.txt": {
+        "entities": {
+            "carl stephenson": 1,
+            "leiningen": 66,
+            "fathead": 1,
+            "dullards": 1,
+            "jaguars": 1,
+            "tapirs": 1,
+            "bush": 2,
+            "pell-mell": 1,
+            "macbeth": 1,
+            "birnam wood": 1,
+            "dante": 1,
+            "thc ranch house": 1
+        },
+        "runtime": 2.2532911999987846
+    },
+    "The Gift of the Magi.txt": {
+        "entities": {
+            "della": 21,
+            "james dillingham young": 5,
+            "james d young": 0,
+            "jim": 30,
+            "sofronie": 4,
+            "kinds": 1,
+            "watch": 11,
+            "dell": 22,
+            "combs": 4
+        },
+        "runtime": 0.60254359999999
+    },
+    "The Lady or the Tiger Original.txt": {
+        "entities": {
+            "frank r stockton": 0,
+            "royal party": 1
+        },
+        "runtime": 0.500119000000268
+    },
+    "The Most Dangerous Game.txt": {
+        "entities": {
+            "richard connell": 1,
+            "whitney": 9,
+            "mystery": 1,
+            "rainsford": 135,
+            "bush": 4,
+            "purdey": 1,
+            "amazon": 2,
+            "jaguar": 5,
+            "cannibals": 2,
+            "nielsen": 1,
+            "brier": 1,
+            "eyelids": 1,
+            "mirage": 2,
+            "sanger rainsford of": 1,
+            "sanger rainsford": 2,
+            "zaroff": 20,
+            "ivan": 15,
+            "cossack": 8,
+            "ford": 137,
+            "tigers": 4,
+            "rockies": 1,
+            "hunt jaguars": 1,
+            "mean": 6,
+            "great guns": 1,
+            "great white czar": 1,
+            "folies": 1,
+            "suzette": 1,
+            "chablis": 2,
+            "i": 2400,
+            "veuve clicquot": 1,
+            "lazarus": 2,
+            "au": 21,
+            "general zaroff": 18,
+            "fox": 3,
+            "marcus aurelius": 1
+        },
+        "runtime": 2.489246400000411
+    },
+    "The Ransom of Red Chief.txt": {
+        "entities": {
+            "ransom of red chief": 1,
+            "o henry": 0,
+            "bill driscoll": 2,
+            "bill": 62,
+            "weekly farmers’ budget": 1,
+            "ebenezer dorset": 4,
+            "dorset": 12,
+            "buffalo bill’s": 1,
+            "old hank": 3,
+            "trapper": 1,
+            "geronimo": 1,
+            "braves": 1,
+            "jimmy talbot’s": 1,
+            "hank": 4,
+            "ed walker": 1,
+            "amos murray": 1,
+            "i": 1173,
+            "sam": 14,
+            "david": 1,
+            "goliath": 1,
+            "black scout": 7,
+            "red chief": 11,
+            "esq": 1,
+            "elder ebenezer dorset’s": 1,
+            "johnny": 1,
+            "penzance": 1
+        },
+        "runtime": 0.975886599999285
+    },
+    "The Tell Tale Heart.txt": {
+        "entities": {
+            "edgar allan poe": 1,
+            "death": 2,
+            "to": 57
+        },
+        "runtime": 0.703213599999799
+    }
+}

@@ -1,0 +1,96 @@
+{
+  "Hills Like White Elephants.txt": {
+    "entities": {
+      "ernest hemingway": 2,
+      "jig": 2
+    },
+    "runtime": 18.70915520000017
+  },
+  "Leiningen Versus the Ants.txt": {
+    "entities": {
+      "carl stephenson": 1,
+      "leiningen": 66,
+      "hood": 1,
+      "dullards": 1,
+      "dawn": 3,
+      "macbeth": 1,
+      "birnam wood": 1,
+      "scot": 1,
+      "dante": 1,
+      "spry": 1,
+      "swift": 6
+    },
+    "runtime": 118.43135020000045
+  },
+  "The Gift of the Magi.txt": {
+    "entities": {
+      "della": 21,
+      "james dillingham young": 5,
+      "james d. young": 1,
+      "jim": 30,
+      "james dillingham youngs": 1,
+      "sofronie": 4,
+      "combs": 4,
+      "christ-child": 1
+    },
+    "runtime": 28.091589499999827
+  },
+  "The Lady or the Tiger Original.txt": {
+    "entities": {
+      "frank r. stockton": 1
+    },
+    "runtime": 35.324933600000804
+  },
+  "The Most Dangerous Game.txt": {
+    "entities": {
+      "richard connell": 1,
+      "whitney": 9,
+      "rainsford": 135,
+      "purdey": 1,
+      "nielsen": 1,
+      "sanger rainsford": 2,
+      "zaroff": 20,
+      "ivan": 15,
+      "great white czar": 1,
+      "ennui": 1,
+      "suzette": 1,
+      "cossack": 8,
+      "veuve clicquot": 1,
+      "lazarus": 2,
+      "au revoir": 1,
+      "dusk": 2,
+      "marcus aurelius": 1
+    },
+    "runtime": 84.89888079999946
+  },
+  "The Ransom of Red Chief.txt": {
+    "entities": {
+      "ransom of red chief": 1,
+      "o. henry": 1,
+      "bill driscoll": 2,
+      "ebenezer dorset": 4,
+      "old hank": 3,
+      "geronimo": 1,
+      "jimmy talbot": 1,
+      "ed walker": 1,
+      "amos murray": 1,
+      "sam": 14,
+      "aunt jane": 1,
+      "david": 1,
+      "goliath": 1,
+      "herod": 1,
+      "black scout": 7,
+      "summit": 11,
+      "elder ebenezer dorset": 1,
+      "johnny": 1
+    },
+    "runtime": 52.09752689999914
+  },
+  "The Tell Tale Heart.txt": {
+    "entities": {
+      "edgar allan poe": 1,
+      "madmen": 1
+    },
+    "runtime": 28.771596700000373
+  }
+}
