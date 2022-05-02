@@ -23,7 +23,7 @@ def remove_multiple_spaces(token):
 	return " ".join(token.split())
 
 def clean_entity(token):
-    toclean = ['\'s', 'the ']
+    toclean = ['\'s', 'the ', '--', '/', '.']
     for el in toclean:
         if el in token.lower():
             token = token.lower().replace(el, '')
@@ -133,16 +133,17 @@ def get_book_string(file_path):
 		return file.read().rstrip()
 
 short_stories_path = "../material/short_stories_corpus/"
+medium_stories_path = "../material/medium_stories_corpus/"
+litbank_stories_path = "../material/litbank_corpus/"
 
-files = os.listdir(short_stories_path)
-
+files = os.listdir(litbank_stories_path)
 
 def get_performance(model):
     performance_model = {}
     for file in files:
         print(file)
         performance = {}
-        novel = get_book_string(short_stories_path + file)
+        novel = get_book_string(litbank_stories_path + file)
         start = timeit.default_timer()
         if model == 'stanza':
             entities = get_common_entities_stanza(novel)
@@ -163,12 +164,12 @@ def get_performance(model):
     return performance_model
 
 performance_stanza = get_performance('stanza')
-performance_spacy = get_performance('spacy')
+# performance_spacy = get_performance('spacy')
 
 with open("../results/performance_stanza.json", "w+", encoding="utf-8") as outfile:
     json.dump(performance_stanza, outfile, indent=4, ensure_ascii=False)
 
-with open("../results/performance_spacy.json", "w+", encoding="utf-8") as outfile:
-    json.dump(performance_spacy, outfile, indent=4, ensure_ascii=False)
+# with open("../results/performance_spacy.json", "w+", encoding="utf-8") as outfile:
+#     json.dump(performance_spacy, outfile, indent=4, ensure_ascii=False)
 
 # %%
