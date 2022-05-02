@@ -23,13 +23,13 @@ def remove_multiple_spaces(token):
 	return " ".join(token.split())
 
 def clean_entity(token):
-    toclean = ['\'s', 'the']
+    toclean = ['\'s', 'the ']
     for el in toclean:
         if el in token.lower():
             token = token.lower().replace(el, '')
     return remove_multiple_spaces(token)
 
-def get_entities_with_spacy(sentence):
+def get_entities_with_spacy(text):
 	doc = ner(text)
 	occurence_list = []
 
@@ -56,8 +56,10 @@ def get_common_entities_spacy(text):
 
 	# Remove duplicates
 	occurence_list = list(dict.fromkeys(occurence_list_sp))
-
-	return occurence_list 
+	oc = []
+	for el in occurence_list:
+		oc.append(clean_entity(el))
+	return oc
 
 def get_common_entities_stanza(text):
     doc = ner_spacy_stanza_tagger(text)
@@ -161,8 +163,12 @@ def get_performance(model):
     return performance_model
 
 performance_stanza = get_performance('stanza')
-# print(performance_stanza)
+performance_spacy = get_performance('spacy')
 
-with open("performance_stanza", "w+", encoding="utf-8") as outfile:
+with open("../results/performance_stanza.json", "w+", encoding="utf-8") as outfile:
     json.dump(performance_stanza, outfile, indent=4, ensure_ascii=False)
+
+with open("../results/performance_spacy.json", "w+", encoding="utf-8") as outfile:
+    json.dump(performance_spacy, outfile, indent=4, ensure_ascii=False)
+
 # %%
