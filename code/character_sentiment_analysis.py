@@ -80,3 +80,41 @@ for key in sentiments:
 
 
 # %%
+# =========== SENTIMENT USING AFINN ===========
+from afinn import Afinn
+import json
+short_stories_path = "../material/short_stories_corpus/"
+medium_stories_path = "../material/medium_stories_corpus/"
+litbank_stories_path = "../material/litbank_corpus/"
+
+file_name = "The Tortoise and the Birds.txt"
+model = "stanza"
+
+novel = get_book_string(short_stories_path + file_name)
+
+def read_json(path):
+    f = open(path,"r",encoding='utf-8')
+    data = json.load(f)
+    return data
+
+def get_entities(book, model):
+	corpus = book.split('/')[-2].split('_')[0]
+	data = read_json('../results/performance_' + model + "_" + corpus + '.json')
+	entities = list(data[book.split('/')[-1]]['entities'].keys())
+	return entities
+
+
+afinn = Afinn()
+entities = get_entities(short_stories_path + file_name, model)
+sent_text = nltk.sent_tokenize(novel)
+sentiment = {}
+for sentence in sent_text:
+	for entity in entities:
+		if entity in sentence.lower():
+			if entity not in sentiment: sentiment[entity] = 0
+			sentiment_score = afinn.score(sentence)
+			sentiment[entity] += sentiment_score
+			# print(sentiment_score)
+print(sentiment)
+
+# %%
