@@ -83,14 +83,12 @@ for key in sentiments:
 # =========== SENTIMENT USING AFINN ===========
 from afinn import Afinn
 import json
+import os
 short_stories_path = "../material/short_stories_corpus/"
 medium_stories_path = "../material/medium_stories_corpus/"
 litbank_stories_path = "../material/litbank_corpus/"
 
-file_name = "The Tortoise and the Birds.txt"
 model = "stanza"
-
-novel = get_book_string(short_stories_path + file_name)
 
 def read_json(path):
     f = open(path,"r",encoding='utf-8')
@@ -104,17 +102,34 @@ def get_entities(book, model):
 	return entities
 
 
-afinn = Afinn()
-entities = get_entities(short_stories_path + file_name, model)
-sent_text = nltk.sent_tokenize(novel)
-sentiment = {}
-for sentence in sent_text:
+def get_sentiment(novel, entities):
+	afinn = Afinn()
+	sent_text = nltk.sent_tokenize(novel)
+	sentiment_dict = {}
+	sentiment = {}
+	general_sentiment = []
+	for sentence in sent_text:
+		sentiment_score = afinn.score(sentence)
+		general_sentiment.append(sentiment_score)
+		for entity in entities:
+			if entity in sentence.lower():
+				if entity not in sentiment: sentiment[entity] = []
+				sentiment[entity].append(sentiment_score)
+				# print(sentiment_score)
 	for entity in entities:
-		if entity in sentence.lower():
-			if entity not in sentiment: sentiment[entity] = 0
-			sentiment_score = afinn.score(sentence)
-			sentiment[entity] += sentiment_score
-			# print(sentiment_score)
-print(sentiment)
+		if entity in sentiment: sentiment[entity] = np.mean(sentiment[entity])
+		else: sentiment[entity] = 0.0
+	general_sentiment = np.mean(general_sentiment)
+	sentiment_dict["general"] = general_sentiment
+	sentiment_dict["entities"] = sentiment
+	print(sentiment_dict)
+
+files = os.listdir(short_stories_path)
+for index, file in enumerate(files):
+	novel = get_book_string(short_stories_path + file)
+	entities = get_entities(short_stories_path + file, model)
+	get_sentiment(novel, entities)
+	if index > 10:
+		break
 
 # %%
