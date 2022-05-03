@@ -1,0 +1,648 @@
+﻿first,second,count
+Lady Greystoke,he,5
+he,he,4
+Words,he,3
+Clayton,he,3
+he,the captain,3
+he,it,3
+he,the brutality,3
+he,the crew,3
+anything,he,3
+he,the kind,3
+he,passengers,3
+he,pass,3
+he,make,3
+display,he,3
+countenance,he,3
+he,remain,3
+John,Lord Greystoke,2
+John,Lady Alice,2
+Lady Alice,Lord Greystoke,2
+he,just that instant,2
+he,the officer,2
+Lord,he,2
+he,the sailor,2
+he,the deck,2
+he,the water-pail,2
+he,its dirty contents,2
+he,turn,2
+he,leave,2
+do,he,2
+he,trip,2
+he,sprawl,2
+he,overturn,2
+drench,he,2
+Clayton,it,2
+Clayton,the crew,2
+Black Michael,Clayton,2
+Clayton,the type,1
+Clayton,Englishman,1
+Clayton,one,1
+Clayton,the noblest monuments,1
+Clayton,historic achievement,1
+Clayton,a thousand victorious battlefields,1
+Clayton,"a strong , virile man",1
+Clayton,like,1
+Clayton,associate,1
+Englishman,the type,1
+one,the type,1
+the noblest monuments,the type,1
+historic achievement,the type,1
+a thousand victorious battlefields,the type,1
+"a strong , virile man",the type,1
+like,the type,1
+associate,the type,1
+Englishman,one,1
+Englishman,the noblest monuments,1
+Englishman,historic achievement,1
+Englishman,a thousand victorious battlefields,1
+Englishman,"a strong , virile man",1
+Englishman,like,1
+Englishman,associate,1
+one,the noblest monuments,1
+historic achievement,one,1
+a thousand victorious battlefields,one,1
+"a strong , virile man",one,1
+like,one,1
+associate,one,1
+historic achievement,the noblest monuments,1
+a thousand victorious battlefields,the noblest monuments,1
+"a strong , virile man",the noblest monuments,1
+like,the noblest monuments,1
+associate,the noblest monuments,1
+a thousand victorious battlefields,historic achievement,1
+"a strong , virile man",historic achievement,1
+historic achievement,like,1
+associate,historic achievement,1
+"a strong , virile man",a thousand victorious battlefields,1
+a thousand victorious battlefields,like,1
+a thousand victorious battlefields,associate,1
+"a strong , virile man",like,1
+"a strong , virile man",associate,1
+associate,like,1
+We,a bright May morning,1
+John,We,1
+Lord Greystoke,We,1
+Lady Alice,We,1
+Dover,We,1
+We,their way,1
+Africa,We,1
+We,know,1
+We,sail,1
+John,a bright May morning,1
+Lord Greystoke,a bright May morning,1
+Lady Alice,a bright May morning,1
+Dover,a bright May morning,1
+a bright May morning,their way,1
+Africa,a bright May morning,1
+a bright May morning,know,1
+a bright May morning,sail,1
+Dover,John,1
+John,their way,1
+Africa,John,1
+John,know,1
+John,sail,1
+Dover,Lord Greystoke,1
+Lord Greystoke,their way,1
+Africa,Lord Greystoke,1
+Lord Greystoke,know,1
+Lord Greystoke,sail,1
+Dover,Lady Alice,1
+Lady Alice,their way,1
+Africa,Lady Alice,1
+Lady Alice,know,1
+Lady Alice,sail,1
+Dover,their way,1
+Africa,Dover,1
+Dover,know,1
+Dover,sail,1
+Africa,their way,1
+know,their way,1
+sail,their way,1
+Africa,know,1
+Africa,sail,1
+know,sail,1
+John,his wife,1
+John,the eyes,1
+John,the knowledge,1
+John,men,1
+John,vanish,1
+Lord Greystoke,his wife,1
+Lord Greystoke,the eyes,1
+Lord Greystoke,the knowledge,1
+Lord Greystoke,men,1
+Lord Greystoke,vanish,1
+Lady Alice,his wife,1
+Lady Alice,the eyes,1
+Lady Alice,the knowledge,1
+Lady Alice,men,1
+Lady Alice,vanish,1
+his wife,the eyes,1
+his wife,the knowledge,1
+his wife,men,1
+his wife,vanish,1
+the eyes,the knowledge,1
+men,the eyes,1
+the eyes,vanish,1
+men,the knowledge,1
+the knowledge,vanish,1
+men,vanish,1
+just that instant,the officer,1
+Lord,just that instant,1
+Lady Greystoke,just that instant,1
+just that instant,the sailor,1
+just that instant,the deck,1
+just that instant,the water-pail,1
+its dirty contents,just that instant,1
+just that instant,turn,1
+just that instant,leave,1
+do,just that instant,1
+just that instant,trip,1
+just that instant,sprawl,1
+just that instant,overturn,1
+drench,just that instant,1
+Lord,the officer,1
+Lady Greystoke,the officer,1
+the officer,the sailor,1
+the deck,the officer,1
+the officer,the water-pail,1
+its dirty contents,the officer,1
+the officer,turn,1
+leave,the officer,1
+do,the officer,1
+the officer,trip,1
+sprawl,the officer,1
+overturn,the officer,1
+drench,the officer,1
+Lady Greystoke,Lord,1
+Lord,the sailor,1
+Lord,the deck,1
+Lord,the water-pail,1
+Lord,its dirty contents,1
+Lord,turn,1
+Lord,leave,1
+Lord,do,1
+Lord,trip,1
+Lord,sprawl,1
+Lord,overturn,1
+Lord,drench,1
+Lady Greystoke,the sailor,1
+Lady Greystoke,the deck,1
+Lady Greystoke,the water-pail,1
+Lady Greystoke,its dirty contents,1
+Lady Greystoke,turn,1
+Lady Greystoke,leave,1
+Lady Greystoke,do,1
+Lady Greystoke,trip,1
+Lady Greystoke,sprawl,1
+Lady Greystoke,overturn,1
+Lady Greystoke,drench,1
+the deck,the sailor,1
+the sailor,the water-pail,1
+its dirty contents,the sailor,1
+the sailor,turn,1
+leave,the sailor,1
+do,the sailor,1
+the sailor,trip,1
+sprawl,the sailor,1
+overturn,the sailor,1
+drench,the sailor,1
+the deck,the water-pail,1
+its dirty contents,the deck,1
+the deck,turn,1
+leave,the deck,1
+do,the deck,1
+the deck,trip,1
+sprawl,the deck,1
+overturn,the deck,1
+drench,the deck,1
+its dirty contents,the water-pail,1
+the water-pail,turn,1
+leave,the water-pail,1
+do,the water-pail,1
+the water-pail,trip,1
+sprawl,the water-pail,1
+overturn,the water-pail,1
+drench,the water-pail,1
+its dirty contents,turn,1
+its dirty contents,leave,1
+do,its dirty contents,1
+its dirty contents,trip,1
+its dirty contents,sprawl,1
+its dirty contents,overturn,1
+drench,its dirty contents,1
+leave,turn,1
+do,turn,1
+trip,turn,1
+sprawl,turn,1
+overturn,turn,1
+drench,turn,1
+do,leave,1
+leave,trip,1
+leave,sprawl,1
+leave,overturn,1
+drench,leave,1
+do,trip,1
+do,sprawl,1
+do,overturn,1
+do,drench,1
+sprawl,trip,1
+overturn,trip,1
+drench,trip,1
+overturn,sprawl,1
+drench,sprawl,1
+drench,overturn,1
+Clayton,Words,1
+Words,the captain,1
+Words,it,1
+Words,the brutality,1
+Words,the crew,1
+Words,anything,1
+Words,the kind,1
+Lady Greystoke,Words,1
+Words,passengers,1
+Words,pass,1
+Words,make,1
+Words,display,1
+Words,countenance,1
+Words,remain,1
+Clayton,the captain,1
+Clayton,the brutality,1
+Clayton,anything,1
+Clayton,the kind,1
+Clayton,Lady Greystoke,1
+Clayton,passengers,1
+Clayton,pass,1
+Clayton,make,1
+Clayton,display,1
+Clayton,countenance,1
+Clayton,remain,1
+it,the captain,1
+the brutality,the captain,1
+the captain,the crew,1
+anything,the captain,1
+the captain,the kind,1
+Lady Greystoke,the captain,1
+passengers,the captain,1
+pass,the captain,1
+make,the captain,1
+display,the captain,1
+countenance,the captain,1
+remain,the captain,1
+it,the brutality,1
+it,the crew,1
+anything,it,1
+it,the kind,1
+Lady Greystoke,it,1
+it,passengers,1
+it,pass,1
+it,make,1
+display,it,1
+countenance,it,1
+it,remain,1
+the brutality,the crew,1
+anything,the brutality,1
+the brutality,the kind,1
+Lady Greystoke,the brutality,1
+passengers,the brutality,1
+pass,the brutality,1
+make,the brutality,1
+display,the brutality,1
+countenance,the brutality,1
+remain,the brutality,1
+anything,the crew,1
+the crew,the kind,1
+Lady Greystoke,the crew,1
+passengers,the crew,1
+pass,the crew,1
+make,the crew,1
+display,the crew,1
+countenance,the crew,1
+remain,the crew,1
+anything,the kind,1
+Lady Greystoke,anything,1
+anything,passengers,1
+anything,pass,1
+anything,make,1
+anything,display,1
+anything,countenance,1
+anything,remain,1
+Lady Greystoke,the kind,1
+passengers,the kind,1
+pass,the kind,1
+make,the kind,1
+display,the kind,1
+countenance,the kind,1
+remain,the kind,1
+Lady Greystoke,passengers,1
+Lady Greystoke,pass,1
+Lady Greystoke,make,1
+Lady Greystoke,display,1
+Lady Greystoke,countenance,1
+Lady Greystoke,remain,1
+pass,passengers,1
+make,passengers,1
+display,passengers,1
+countenance,passengers,1
+passengers,remain,1
+make,pass,1
+display,pass,1
+countenance,pass,1
+pass,remain,1
+display,make,1
+countenance,make,1
+make,remain,1
+countenance,display,1
+display,remain,1
+countenance,remain,1
+The big fellow,who,1
+The big fellow,his mates,1
+Black Michael,The big fellow,1
+The big fellow,his leg,1
+The big fellow,it,1
+The big fellow,his weight,1
+Clayton,The big fellow,1
+The big fellow,a word,1
+The big fellow,gruff thanks,1
+The big fellow,know,1
+The big fellow,try,1
+The big fellow,find,1
+The big fellow,bear,1
+The big fellow,turn,1
+his mates,who,1
+Black Michael,who,1
+his leg,who,1
+it,who,1
+his weight,who,1
+Clayton,who,1
+a word,who,1
+gruff thanks,who,1
+know,who,1
+try,who,1
+find,who,1
+bear,who,1
+turn,who,1
+Black Michael,his mates,1
+his leg,his mates,1
+his mates,it,1
+his mates,his weight,1
+Clayton,his mates,1
+a word,his mates,1
+gruff thanks,his mates,1
+his mates,know,1
+his mates,try,1
+find,his mates,1
+bear,his mates,1
+his mates,turn,1
+Black Michael,his leg,1
+Black Michael,it,1
+Black Michael,his weight,1
+Black Michael,a word,1
+Black Michael,gruff thanks,1
+Black Michael,know,1
+Black Michael,try,1
+Black Michael,find,1
+Black Michael,bear,1
+Black Michael,turn,1
+his leg,it,1
+his leg,his weight,1
+Clayton,his leg,1
+a word,his leg,1
+gruff thanks,his leg,1
+his leg,know,1
+his leg,try,1
+find,his leg,1
+bear,his leg,1
+his leg,turn,1
+his weight,it,1
+a word,it,1
+gruff thanks,it,1
+it,know,1
+it,try,1
+find,it,1
+bear,it,1
+it,turn,1
+Clayton,his weight,1
+a word,his weight,1
+gruff thanks,his weight,1
+his weight,know,1
+his weight,try,1
+find,his weight,1
+bear,his weight,1
+his weight,turn,1
+Clayton,a word,1
+Clayton,gruff thanks,1
+Clayton,know,1
+Clayton,try,1
+Clayton,find,1
+Clayton,bear,1
+Clayton,turn,1
+a word,gruff thanks,1
+a word,know,1
+a word,try,1
+a word,find,1
+a word,bear,1
+a word,turn,1
+gruff thanks,know,1
+gruff thanks,try,1
+find,gruff thanks,1
+bear,gruff thanks,1
+gruff thanks,turn,1
+know,try,1
+find,know,1
+bear,know,1
+know,turn,1
+find,try,1
+bear,try,1
+try,turn,1
+bear,find,1
+find,turn,1
+bear,turn,1
+the second day,the wounding,1
+Black Michael,the second day,1
+Clayton,the second day,1
+deck,the second day,1
+the second day,time,1
+the limp body,the second day,1
+the crew,the second day,1
+his fellows,the second day,1
+the first mate,the second day,1
+a heavy belaying pin,the second day,1
+his hand,the second day,1
+the little party,the second day,1
+sullen sailors,the second day,1
+come,the second day,1
+see,the second day,1
+carry,the second day,1
+belay,the second day,1
+stand,the second day,1
+glower,the second day,1
+Black Michael,the wounding,1
+Clayton,the wounding,1
+deck,the wounding,1
+the wounding,time,1
+the limp body,the wounding,1
+the crew,the wounding,1
+his fellows,the wounding,1
+the first mate,the wounding,1
+a heavy belaying pin,the wounding,1
+his hand,the wounding,1
+the little party,the wounding,1
+sullen sailors,the wounding,1
+come,the wounding,1
+see,the wounding,1
+carry,the wounding,1
+belay,the wounding,1
+stand,the wounding,1
+glower,the wounding,1
+Black Michael,deck,1
+Black Michael,time,1
+Black Michael,the limp body,1
+Black Michael,the crew,1
+Black Michael,his fellows,1
+Black Michael,the first mate,1
+Black Michael,a heavy belaying pin,1
+Black Michael,his hand,1
+Black Michael,the little party,1
+Black Michael,sullen sailors,1
+Black Michael,come,1
+Black Michael,see,1
+Black Michael,carry,1
+Black Michael,belay,1
+Black Michael,stand,1
+Black Michael,glower,1
+Clayton,deck,1
+Clayton,time,1
+Clayton,the limp body,1
+Clayton,his fellows,1
+Clayton,the first mate,1
+Clayton,a heavy belaying pin,1
+Clayton,his hand,1
+Clayton,the little party,1
+Clayton,sullen sailors,1
+Clayton,come,1
+Clayton,see,1
+Clayton,carry,1
+Clayton,belay,1
+Clayton,stand,1
+Clayton,glower,1
+deck,time,1
+deck,the limp body,1
+deck,the crew,1
+deck,his fellows,1
+deck,the first mate,1
+a heavy belaying pin,deck,1
+deck,his hand,1
+deck,the little party,1
+deck,sullen sailors,1
+come,deck,1
+deck,see,1
+carry,deck,1
+belay,deck,1
+deck,stand,1
+deck,glower,1
+the limp body,time,1
+the crew,time,1
+his fellows,time,1
+the first mate,time,1
+a heavy belaying pin,time,1
+his hand,time,1
+the little party,time,1
+sullen sailors,time,1
+come,time,1
+see,time,1
+carry,time,1
+belay,time,1
+stand,time,1
+glower,time,1
+the crew,the limp body,1
+his fellows,the limp body,1
+the first mate,the limp body,1
+a heavy belaying pin,the limp body,1
+his hand,the limp body,1
+the limp body,the little party,1
+sullen sailors,the limp body,1
+come,the limp body,1
+see,the limp body,1
+carry,the limp body,1
+belay,the limp body,1
+stand,the limp body,1
+glower,the limp body,1
+his fellows,the crew,1
+the crew,the first mate,1
+a heavy belaying pin,the crew,1
+his hand,the crew,1
+the crew,the little party,1
+sullen sailors,the crew,1
+come,the crew,1
+see,the crew,1
+carry,the crew,1
+belay,the crew,1
+stand,the crew,1
+glower,the crew,1
+his fellows,the first mate,1
+a heavy belaying pin,his fellows,1
+his fellows,his hand,1
+his fellows,the little party,1
+his fellows,sullen sailors,1
+come,his fellows,1
+his fellows,see,1
+carry,his fellows,1
+belay,his fellows,1
+his fellows,stand,1
+glower,his fellows,1
+a heavy belaying pin,the first mate,1
+his hand,the first mate,1
+the first mate,the little party,1
+sullen sailors,the first mate,1
+come,the first mate,1
+see,the first mate,1
+carry,the first mate,1
+belay,the first mate,1
+stand,the first mate,1
+glower,the first mate,1
+a heavy belaying pin,his hand,1
+a heavy belaying pin,the little party,1
+a heavy belaying pin,sullen sailors,1
+a heavy belaying pin,come,1
+a heavy belaying pin,see,1
+a heavy belaying pin,carry,1
+a heavy belaying pin,belay,1
+a heavy belaying pin,stand,1
+a heavy belaying pin,glower,1
+his hand,the little party,1
+his hand,sullen sailors,1
+come,his hand,1
+his hand,see,1
+carry,his hand,1
+belay,his hand,1
+his hand,stand,1
+glower,his hand,1
+sullen sailors,the little party,1
+come,the little party,1
+see,the little party,1
+carry,the little party,1
+belay,the little party,1
+stand,the little party,1
+glower,the little party,1
+come,sullen sailors,1
+see,sullen sailors,1
+carry,sullen sailors,1
+belay,sullen sailors,1
+stand,sullen sailors,1
+glower,sullen sailors,1
+come,see,1
+carry,come,1
+belay,come,1
+come,stand,1
+come,glower,1
+carry,see,1
+belay,see,1
+see,stand,1
+glower,see,1
+belay,carry,1
+carry,stand,1
+carry,glower,1
+belay,stand,1
+belay,glower,1
+glower,stand,1
