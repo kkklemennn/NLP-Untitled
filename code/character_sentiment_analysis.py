@@ -114,22 +114,23 @@ def get_sentiment(novel, entities):
 		for entity in entities:
 			if entity in sentence.lower():
 				if entity not in sentiment: sentiment[entity] = []
-				sentiment[entity].append(sentiment_score)
+				sentiment[entity].append(sentiment_score / 5)
 				# print(sentiment_score)
 	for entity in entities:
 		if entity in sentiment: sentiment[entity] = np.mean(sentiment[entity])
 		else: sentiment[entity] = 0.0
 	general_sentiment = np.mean(general_sentiment)
-	sentiment_dict["general"] = general_sentiment
+	sentiment_dict["general"] = general_sentiment / 5
 	sentiment_dict["entities"] = sentiment
-	print(sentiment_dict)
+	return sentiment_dict
 
-files = os.listdir(short_stories_path)
+files = os.listdir(litbank_stories_path)
+sentiments = {}
 for index, file in enumerate(files):
-	novel = get_book_string(short_stories_path + file)
-	entities = get_entities(short_stories_path + file, model)
-	get_sentiment(novel, entities)
-	if index > 10:
-		break
+	novel = get_book_string(litbank_stories_path + file)
+	entities = get_entities(litbank_stories_path + file, model)
+	sentiments[file] = get_sentiment(novel, entities)
 
+with open("../results/sentiments_stanza_litbank_afinn.json", "w+", encoding="utf-8") as outfile:
+    json.dump(sentiments, outfile, indent=4, ensure_ascii=False)
 # %%
