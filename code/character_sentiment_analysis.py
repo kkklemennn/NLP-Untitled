@@ -12,11 +12,11 @@ from nltk.tokenize import sent_tokenize
 stanza_sentiment = stanza.Pipeline(lang='en', processors='tokenize,sentiment', use_gpu=False)
 
 #%%
-def get_sentiments_for_characters_naive(character_list, text):
+def get_sentiments_for_characters_naive(character_list, text, normalize):
 	"""
 	Get sentiments for the character list in the text.
-	Perform sentiment analysis on each sentence and append the result
-	to each character that occurs in the sentence.
+	Perform sentiment analysis on each sentence where characters
+	from the character list occur.
 	Finally, calculate the average sentiment for each character (+1 postive , 0 neutral, -1 negative)
 	"""
 	# Create empty sentiment dictionary
@@ -24,60 +24,54 @@ def get_sentiments_for_characters_naive(character_list, text):
 	# Create a stanza document from the entire text
 	doc = stanza_sentiment(text)
 
+	# Split "2 word" characters
+	character_list_modified = [words for segments in character_list for words in segments.split()]
+	#print("character list ->", character_list)
 	# Loop over all sentences (stanza does the sent tokenization for us)
 	for sentence in doc.sentences:
 		# Convert stanza to python object
 		word_list = sentence.to_dict()
+		sentence_sentiment = sentence.sentiment - 1
+		sentiments['stats']['sentiments'].append(sentence_sentiment)
 		# Check if any of our characters are part of the sentence
 		for word_ in word_list:
 			word = word_['text'].lower()
-			if word in character_list:
-				sentiments['stats']['sentiments'].append(sentence.sentiment - 1)
+			if word in character_list_modified:
+				# Find on which index the "substring" of character occured
+				# and save the key as the original name
+				index = [idx for idx, s in enumerate(character_list) if word in s][0]
+				word = character_list[index]
 				# Check if sentiment for the character already exists
 				# and append to existing sentiments
 				if word in sentiments:
-					sentiments[word]['sentiments'].append(sentence.sentiment - 1)		
+					sentiments[word]['sentiments'].append(sentence_sentiment)		
 				# Create new list otherwise
 				else:
-					sentiments[word] = {'sentiments': [sentence.sentiment - 1]}
+					sentiments[word] = {'sentiments': [sentence_sentiment]}
 	
 	# Perform analysis
-	for key in sentiments:
-		sentiments[key]['avg_sentiment'] = sum(sentiments[key]['sentiments']) / len((sentiments[key]['sentiments']))
-
+	if len((sentiments['stats']['sentiments'])) == 0:
+		return None
+	#
+	sentiments['stats']['avg_sentiment'] = sum(sentiments['stats']['sentiments']) / len((sentiments['stats']['sentiments']))
 	sentiments['stats']["num_sentences"] = len(sentiments['stats']['sentiments'])
+	
+	for key in sentiments:
+		if key != "stats":
+			sentiments[key]['avg_sentiment'] = sum(sentiments[key]['sentiments']) / len((sentiments[key]['sentiments']))
+			if normalize:
+				sentiments[key]['avg_sentiment'] -= sentiments['stats']['avg_sentiment']
+
 
 	return sentiments
+
+
 
 
 def get_book_string(file_path):
 	with open(file_path, 'r', encoding="utf8") as file:
 		return file.read().replace('\n', ' ')
 	
-
-# %% 
-
-short_stories_path = "../material/short_stories_corpus/"
-medium_stories_path = "../material/medium_stories_corpus/"
-
-file_name = "Hills Like White Elephants.txt"
-# =========== Read the book into a string ===========
-novel = get_book_string(medium_stories_path + file_name)
-if (novel is None or novel == ''):
-	print("File was not found. Please check if the file exists or correct your path.")
-	exit()
-
-entities = ['man', 'jig', 'waitress', 'woman']
-
-
-sentiments = get_sentiments_for_characters_naive(['luka', 'jan', 'martin'], 'Luka is very friendly. Jan is very mean. Martin is ok.')
-print("Number of sentences :", sentiments["stats"]["num_sentences"])
-print("average Sentiment :", sentiments["stats"]["avg_sentiment"])
-for key in sentiments:
-	if key != 'stats':
-		print("Stats for character >>",key, "<< ") 
-		print("Average sentiment: ", sentiments[key]['avg_sentiment']) 
-
 
 # %%
 # =========== SENTIMENT USING AFINN ===========
@@ -133,4 +127,31 @@ for index, file in enumerate(files):
 
 with open("../results/sentiments_stanza_litbank_afinn.json", "w+", encoding="utf-8") as outfile:
     json.dump(sentiments, outfile, indent=4, ensure_ascii=False)
+# %%
+file_name = "174_the_picture_of_dorian_gray_brat.txt"
+model = "stanza"
+
+novel = get_book_string(litbank_stories_path + file_name)
+
+#sentiments = get_sentiments_for_characters_naive(['luka', 'jan', 'martin'], 'Luka is very friendly. Jan is very mean. Martin is ok.', False)
+entities = get_entities(litbank_stories_path + file_name, model)
+#sentiments = get_sentiments_for_characters_naive(entities, novel, False)
+sentiments_normalized = get_sentiments_for_characters_naive(entities, novel, True)
+
+
+
+def print_stanza_sentiments(sentiments):
+	if (sentiments is None):
+		print("Sentiment analysis failed.")
+	else:
+		print("Number of sentences :", sentiments["stats"]["num_sentences"])
+		print("average Sentiment :", sentiments["stats"]["avg_sentiment"])
+		for key in sentiments:
+			if key != 'stats':
+				print("Stats for character(avg) >>",key, "<< ", sentiments[key]['avg_sentiment'] ) 
+
+
+print("========= ", file_name," =========")
+print_stanza_sentiments(sentiments_normalized)
+
 # %%
