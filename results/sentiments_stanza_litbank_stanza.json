@@ -1,0 +1,1419 @@
+{
+    "1023_bleak_house_brat.txt": {
+        "general": -0.47368421052631576,
+        "entities": {
+            "michaelmas": -0.5263157894736843,
+            "jarndyce": -0.046315789473684255,
+            "tom jarndyce": -0.5263157894736843,
+            "blowers": 0.47368421052631576,
+            "chizzle": -0.026315789473684237,
+            "mizzle": -0.026315789473684237
+        }
+    },
+    "105_persuasion_brat.txt": {
+        "general": -0.023255813953488372,
+        "entities": {
+            "walter elliot": 0.18992248062015504,
+            "baronetage": -0.9767441860465116,
+            "elizabeth": 0.22325581395348837,
+            "james stevenson": 0.023255813953488372,
+            "anne": 0.5232558139534884,
+            "mary": 0.22325581395348837,
+            "charles": 0.5232558139534884,
+            "charles musgrove": 0.5232558139534884,
+            "charles ii": 1.0232558139534884,
+            "marys": 1.0232558139534884,
+            "elizabeths": 1.0232558139534884,
+            "kellynch hall": -0.06765327695560254,
+            "william walter elliot": 0.023255813953488372,
+            "lady elliot": 0.29598308668076106,
+            "russell": 0.22325581395348837,
+            "lady russell": 0.0,
+            "anne elliot": 0.0
+        }
+    },
+    "1064_the_masque_of_the_red_death_brat.txt": {
+        "general": -0.21428571428571427,
+        "entities": {
+            "prince prospero": 0.9285714285714286,
+            "hernani": 0.21428571428571427,
+            "herod": -0.7857142857142857
+        }
+    },
+    "110_tess_of_the_durbervilles_a_pure_woman_brat.txt": {
+        "general": -0.3563218390804598,
+        "entities": {
+            "john": 0.3563218390804598,
+            "jack durbeyfield": -0.028293545534924858,
+            "parson tringham": 0.08359456635318707,
+            "pagan d'urberville": -0.04367816091954024,
+            "william conqueror": 0.3563218390804598,
+            "conqueror": 0.0,
+            "lord of estremavilla": 0.14798850574712644,
+            "stephen": 0.3563218390804598,
+            "edward": 1.3563218390804597,
+            "brian": 1.3563218390804597,
+            "oliver cromwell": 0.3563218390804598,
+            "charles": 0.3563218390804598,
+            "johns": 0.3563218390804598,
+            "d'urbervilles": 0.3563218390804598,
+            "john durbeyfield": 0.0,
+            "fred": -0.6436781609195402,
+            "john d'urberville": 0.0,
+            "greenhill": -0.31034482758620685,
+            "marlott": 0.3563218390804598
+        }
+    },
+    "11231_bartleby_the_scrivener_a_story_of_wallstreet_brat.txt": {
+        "general": -0.34444444444444444,
+        "entities": {
+            "bartleby": -0.05555555555555558,
+            "imprimis": 1.3444444444444446,
+            "john jacob astor": 1.011111111111111,
+            "ginger nut": 0.34444444444444444,
+            "nippers": -0.3222222222222222,
+            "tombs": -0.6555555555555556
+        }
+    },
+    "113_the_secret_garden_brat.txt": {
+        "general": -0.51,
+        "entities": {
+            "mary lennox": -0.040000000000000036,
+            "ayah": -0.08999999999999997,
+            "mem sahib": -0.12636363636363634,
+            "missie sahib": -0.49,
+            "saidie": -0.49,
+            "daughter of pigs": -0.24862068965517237,
+            "barney": -0.49
+        }
+    },
+    "1155_the_secret_adversary_brat.txt": {
+        "general": -0.15873015873015872,
+        "entities": {
+            "tommy": -0.19841269841269843,
+            "prudence cowley": 0.015873015873015872,
+            "tuppence": -0.07203907203907206,
+            "greenbank": -0.8412698412698413,
+            "mabel lewis": 1.1587301587301586,
+            "jane finn": 1.1587301587301586,
+            "archdeacon cowley": 0.15873015873015872,
+            "bond": 0.15873015873015872,
+            "westhaven": 0.15873015873015872,
+            "wardmaid": -0.3412698412698413,
+            "thomas beresford": -0.3412698412698413
+        }
+    },
+    "11_alices_adventures_in_wonderland_brat.txt": {
+        "general": -0.21666666666666667,
+        "entities": {
+            "rabbit-hole alice": -0.4083333333333333,
+            "antipathies": -0.7833333333333333,
+            "ma’am": 0.21666666666666667,
+            "dinah": 0.8166666666666667,
+            "white rabbit": -0.7833333333333333
+        }
+    },
+    "1206_the_flying_u_ranch_brat.txt": {
+        "general": 0.0967741935483871,
+        "entities": {
+            "mig-u-ell rapponi": 0.1532258064516129,
+            "old man": 0.1532258064516129,
+            "happy jack": 0.11751152073732718,
+            "pink": -0.7634408602150538,
+            "cal emmett": -1.096774193548387,
+            "miguel": -0.0967741935483871,
+            "weary": 0.4032258064516129,
+            "slim": -0.0967741935483871,
+            "banjo": -0.0967741935483871,
+            "haw -haw - haw": 0.4032258064516129,
+            "natiff sons": -0.4301075268817204,
+            "haw - haw - haw": 0.0,
+            "happy family": 0.028225806451612906
+        }
+    },
+    "120_treasure_island_brat.txt": {
+        "general": -0.36363636363636365,
+        "entities": {
+            "benbow": 0.6136363636363636,
+            "livesey": 0.11363636363636365,
+            "taylor": -0.6363636363636364
+        }
+    },
+    "1245_night_and_day_brat.txt": {
+        "general": -0.14545454545454545,
+        "entities": {
+            "katharine hilbery": -0.02121212121212121,
+            "denham": 0.20427807486631017,
+            "fortescue": -0.18787878787878787,
+            "trafalgar": 0.812121212121212,
+            "sutton bailey": 0.14545454545454545,
+            "d’you": 1.1454545454545455,
+            "ruskin": 0.47878787878787876
+        }
+    },
+    "1260_jane_eyre_an_autobiography_brat.txt": {
+        "general": -0.4727272727272727,
+        "entities": {
+            "reed": 0.1393939393939394,
+            "bessie": 1.2227272727272727,
+            "eliza": 0.806060606060606,
+            "john": 0.1393939393939394,
+            "georgiana reed": 1.4727272727272727,
+            "jane": 0.4727272727272727,
+            "pamela": 0.4727272727272727,
+            "henry": 0.4727272727272727,
+            "earl of moreland": -0.008041958041958064,
+            "bewick": 0.4727272727272727,
+            "mope": -0.5272727272727273,
+            "john reed": 0.0,
+            "lizzy": -0.5272727272727273,
+            "joan": -0.5272727272727273,
+            "jack": -0.027272727272727282,
+            "miles": -0.5272727272727273
+        }
+    },
+    "12677_personality_plus_some_experiences_of_emma_mcchesney_and_her_son_jock_brat.txt": {
+        "general": -0.14150943396226415,
+        "entities": {
+            "prince albert": -0.8584905660377359,
+            "dapper": 0.14150943396226415,
+            "jock mcchesney": -0.008490566037735847,
+            "emma mcchesney": 0.14150943396226415,
+            "son": -0.10849056603773585,
+            "mcquirk": 0.14150943396226415,
+            "hopper": 0.14150943396226415,
+            "annie": 0.14150943396226415,
+            "lamb": 0.14150943396226415
+        }
+    },
+    "1327_elizabeth_and_her_german_garden_brat.txt": {
+        "general": -0.06666666666666667,
+        "entities": {
+            "gustavus adolphus": -0.9333333333333333,
+            "lion of north": -0.11243781094527362,
+            "north": 0.0,
+            "mays": 1.0666666666666667,
+            "solomon": 0.06666666666666667
+        }
+    },
+    "1342_pride_and_prejudice_brat.txt": {
+        "general": -0.16129032258064516,
+        "entities": {
+            "bennet": -0.195852534562212,
+            "netherfield park": 0.4946236559139785,
+            "long": -0.33870967741935487,
+            "morris": 1.1612903225806452,
+            "michaelmas": 1.1612903225806452,
+            "bingley": -0.020527859237536666,
+            "william": -0.8387096774193549,
+            "lady lucas": -0.08870967741935484,
+            "lizzy": -0.43870967741935485,
+            "jane": -0.8387096774193549,
+            "lydia": -0.33870967741935487,
+            "elizabeth": -0.8387096774193549,
+            "kitty": -0.33870967741935487,
+            "aye": -0.8387096774193549,
+            "mary": -0.5053763440860215
+        }
+    },
+    "1400_great_expectations_brat.txt": {
+        "general": -0.2727272727272727,
+        "entities": {
+            "pirrip": -0.30727272727272725,
+            "philip": -0.2272727272727273,
+            "pip": -0.2987012987012987,
+            "joe gargery": -0.3939393939393939,
+            "philip pirrip": 0.0,
+            "georgiana": -0.7272727272727273,
+            "alexander": -0.7272727272727273,
+            "bartholomew": -0.7272727272727273,
+            "abraham": 0.0727272727272727,
+            "tobias": -0.7272727272727273,
+            "roger": -0.7272727272727273,
+            "blacksmith": -0.3939393939393939,
+            "i am": 0.0,
+            "angel": 0.2727272727272727
+        }
+    },
+    "145_middlemarch_brat.txt": {
+        "general": -0.06521739130434782,
+        "entities": {
+            "brooke": -0.10144927536231883,
+            "celia": 0.3652173913043478,
+            "cromwell": -0.9347826086956522,
+            "dorothea": 0.06521739130434782,
+            "pascal": 0.06521739130434782,
+            "pensees": 0.06521739130434782,
+            "jeremy taylor": 0.06521739130434782,
+            "tipton": 0.5652173913043478,
+            "peel": 1.065217391304348,
+            "apostles": -0.9347826086956522,
+            "grange": 0.39855072463768115,
+            "james chettam": 0.5652173913043478,
+            "hooker": 0.06521739130434782,
+            "john milton": 0.06521739130434782,
+            "cadwallader": 0.06521739130434782,
+            "edward casaubon": 1.065217391304348
+        }
+    },
+    "15265_the_quest_of_the_silver_fleece_a_novel_brat.txt": {
+        "general": -0.19327731092436976,
+        "entities": {
+            "billy": -0.8067226890756303,
+            "ye es": 0.19327731092436976,
+            "cresswell": 0.19327731092436976,
+            "smith": 0.19327731092436976,
+            "yon": 0.19327731092436976
+        }
+    },
+    "155_the_moonstone_brat.txt": {
+        "general": -0.2318840579710145,
+        "entities": {
+            "john herncastle": -0.0681159420289855,
+            "baird": 0.2318840579710145,
+            "moon": 0.2318840579710145,
+            "mahmoud of ghizni": -0.04397801099450274,
+            "yellow diamond": 0.05006587615283267,
+            "vishnu preserver": -0.2681159420289855,
+            "preserver": 0.0,
+            "aurungzebe": -0.2681159420289855,
+            "tippoo": -0.10144927536231882,
+            "sultan": 0.2318840579710145,
+            "seringapatam": 0.2318840579710145,
+            "moonstone": -0.018115942028985504
+        }
+    },
+    "158_emma_brat.txt": {
+        "general": 0.04411764705882353,
+        "entities": {
+            "emma woodhouse": 0.17016806722689073,
+            "taylor": 0.10972850678733032,
+            "weston": 0.12254901960784312,
+            "isabella": -0.04411764705882353,
+            "hartfield": -0.5441176470588235,
+            "woodhouses": -0.04411764705882353,
+            "james": 0.15588235294117647,
+            "randalls": -0.04411764705882353,
+            "hannah": 0.9558823529411765,
+            "knightley": -0.37745098039215685
+        }
+    },
+    "160_the_awakening_and_selected_short_stories_brat.txt": {
+        "general": -0.05825242718446602,
+        "entities": {
+            "sapristi": 1.058252427184466,
+            "pontellier": -0.09964230965763923,
+            "madame lebrun": 0.5026968716289104,
+            "zampa": 0.05825242718446602,
+            "robert lebrun": 0.14916151809355693,
+            "klein": 0.05825242718446602,
+            "edna": 0.05825242718446602,
+            "leonce": -0.941747572815534
+        }
+    },
+    "16357_mary_a_fiction_brat.txt": {
+        "general": -0.1694915254237288,
+        "entities": {
+            "i mary": -0.1638418079096045,
+            "mary": 0.0,
+            "edward": 1.1694915254237288,
+            "eliza": 1.1694915254237288,
+            "eliza warwick": 1.1694915254237288
+        }
+    },
+    "1661_the_adventures_of_sherlock_holmes_brat.txt": {
+        "general": -0.2553191489361702,
+        "entities": {
+            "sherlock holmes": 0.2553191489361702,
+            "irene adler": 0.2553191489361702,
+            "odessa": 1.2553191489361701,
+            "trepoff": 1.2553191489361701,
+            "atkinson": 1.2553191489361701,
+            "scarlet": 1.2553191489361701,
+            "watson": -0.2446808510638298,
+            "mary jane": -0.7446808510638299,
+            "papier": 0.2553191489361702,
+            "egria": 0.2553191489361702,
+            "wallenstein": 0.2553191489361702
+        }
+    },
+    "1695_the_man_who_was_thursday_a_nightmare_brat.txt": {
+        "general": -0.10989010989010989,
+        "entities": {
+            "anne": 1.10989010989011,
+            "lucian gregory": -0.09010989010989012,
+            "gabriel syme": -0.03296703296703296,
+            "saffron parkers": -0.29010989010989013,
+            "rosamond": 0.10989010989010989,
+            "victoria": 0.2098901098901099,
+            "byron": 0.10989010989010989,
+            "bradshaw": -0.3901098901098901,
+            "adam": 0.10989010989010989
+        }
+    },
+    "171_charlotte_temple_brat.txt": {
+        "general": -0.10869565217391304,
+        "entities": {
+            "montraville": -0.266304347826087,
+            "belcour": -0.391304347826087,
+            "du pont": 0.10869565217391304,
+            "charlotte temple": 0.2851662404092072,
+            "chichester": 0.10869565217391304,
+            "mademoiselle": 0.10869565217391304,
+            "eldridge": -0.391304347826087,
+            "blakeney": 0.10869565217391304
+        }
+    },
+    "174_the_picture_of_dorian_gray_brat.txt": {
+        "general": -0.17525773195876287,
+        "entities": {
+            "henry wotton": 0.07525773195876287,
+            "basil hallward": -0.09140893470790379,
+            "adonis": -0.8247422680412371,
+            "harry": -0.6247422680412371,
+            "dorian gray": -0.49140893470790376,
+            "duke": -0.8247422680412371
+        }
+    },
+    "18581_adrift_in_new_york_tom_and_florence_braving_the_world_brat.txt": {
+        "general": -0.33663366336633666,
+        "entities": {
+            "florence linden": -0.14985282312014986,
+            "harvey": 0.33663366336633666,
+            "john linden": 0.33663366336633666,
+            "uncle john": -0.06336633663366337,
+            "curtis waring": -0.0981489453293155
+        }
+    },
+    "2005_piccadilly_jim_brat.txt": {
+        "general": -0.2830188679245283,
+        "entities": {
+            "peter pett": -0.2387202625102543,
+            "nesta ford pett": 0.11635220125786164,
+            "willie partridge": 0.2830188679245283,
+            "elmer ford": -0.7169811320754718,
+            "ogden": 0.2830188679245283,
+            "ogden ford": 0.0,
+            "shelley": 0.2830188679245283
+        }
+    },
+    "2084_the_way_of_all_flesh_brat.txt": {
+        "general": -0.11538461538461539,
+        "entities": {
+            "pontifex": 0.1680161943319838,
+            "jim": -0.8846153846153846,
+            "edward": -0.5512820512820512,
+            "samson": -0.8846153846153846,
+            "scipio": -0.8846153846153846,
+            "giotto": -0.3131868131868132,
+            "filippo lippi": 0.11538461538461539,
+            "cromwell": -0.8846153846153846
+        }
+    },
+    "208_daisy_miller_a_study_brat.txt": {
+        "general": 0.03125,
+        "entities": {
+            "vevey": -0.03125,
+            "winterbourne": 0.027573529411764705,
+            "randolph": -0.03125
+        }
+    },
+    "2095_clotelle_a_tale_of_the_southern_states_brat.txt": {
+        "general": 0.17721518987341772,
+        "entities": {
+            "agnes": 0.12278481012658227,
+            "john graves": 0.4894514767932489,
+            "esq": 0.0,
+            "isabella": 0.1561181434599156,
+            "marion": -0.510548523206751,
+            "henry linwood": 0.3227848101265823,
+            "jennings": -0.17721518987341772,
+            "albino": 0.8227848101265822
+        }
+    },
+    "209_the_turn_of_the_screw_brat.txt": {
+        "general": -0.09090909090909091,
+        "entities": {
+            "douglas": -0.1090909090909091,
+            "griffin": -0.40909090909090906,
+            "raison": 0.09090909090909091
+        }
+    },
+    "215_the_call_of_the_wild_brat.txt": {
+        "general": -0.2564102564102564,
+        "entities": {
+            "buck": -0.11858974358974361,
+            "miller": 0.2564102564102564,
+            "toots": -0.07692307692307693,
+            "ysabel": -0.07692307692307693,
+            "mollie": 1.2564102564102564,
+            "alice": 1.2564102564102564,
+            "judge": 0.3473193473193473,
+            "elmo": 0.2564102564102564,
+            "shep": 0.2564102564102564,
+            "klondike": 0.2564102564102564,
+            "manuel": -0.07692307692307693
+        }
+    },
+    "2166_king_solomons_mines_brat.txt": {
+        "general": -0.2716049382716049,
+        "entities": {
+            "henry curtis": 0.7160493827160493,
+            "john good": 1.2716049382716048,
+            "harry": -0.3950617283950617,
+            "foulata": 0.2716049382716049,
+            "gagaoola": 0.2716049382716049,
+            "boers": -0.7283950617283951,
+            "allan quatermain": 0.2716049382716049,
+            "khiva": -0.7283950617283951,
+            "ventvögel": -0.7283950617283951,
+            "captain good": 1.2716049382716048,
+            "dunkeld": -0.7283950617283951,
+            "dane": 0.2716049382716049
+        }
+    },
+    "217_sons_and_lovers_brat.txt": {
+        "general": -0.2125,
+        "entities": {
+            "charles ii": 0.2125,
+            "palmerston": 0.2125,
+            "morel": -0.18750000000000003,
+            "bestwood": -0.037500000000000006,
+            "william": 0.2125,
+            "annie": -0.12083333333333332,
+            "dane": 0.2125,
+            "aunt sally": -0.7875,
+            "lion wallace": -0.037500000000000006
+        }
+    },
+    "219_heart_of_darkness_brat.txt": {
+        "general": -0.17105263157894737,
+        "entities": {
+            "nellie": 0.17105263157894737,
+            "marlow": -0.07894736842105263,
+            "francis drake": 1.1710526315789473,
+            "john franklin": 1.1710526315789473,
+            "golden hind": -0.8289473684210527,
+            "erebus": -0.8289473684210527,
+            "chapman": -0.8289473684210527
+        }
+    },
+    "233_sister_carrie_a_novel_brat.txt": {
+        "general": -0.08695652173913043,
+        "entities": {
+            "caroline meeber": -0.5797101449275361,
+            "carrie": -0.16304347826086957,
+            "gibson": 0.08695652173913043
+        }
+    },
+    "238_dear_enemy_brat.txt": {
+        "general": -0.12745098039215685,
+        "entities": {
+            "judy": 0.2941176470588235,
+            "jervis": 0.5560224089635855,
+            "john grier home": 0.35822021116138764,
+            "sallie mcbride": 0.002450980392156854,
+            "hallock": 0.12745098039215685,
+            "lippett": 0.12745098039215685,
+            "gordon hallock": -0.37254901960784315,
+            "john grier": 0.0,
+            "jane": -0.07254901960784316,
+            "sing": -0.37254901960784315,
+            "jervis pendleton": 0.6274509803921569,
+            "snaith": 0.12745098039215685
+        }
+    },
+    "2489_moby_dick_brat.txt": {
+        "general": -0.20212765957446807,
+        "entities": {
+            "ishmael": 0.20212765957446807,
+            "cato": 0.20212765957446807,
+            "jove": 0.20212765957446807,
+            "narcissus": -0.7978723404255319,
+            "cook": -0.7978723404255319,
+            "gabriel": 0.20212765957446807,
+            "fates": -0.7978723404255319
+        }
+    },
+    "24_o_pioneers_brat.txt": {
+        "general": -0.35051546391752575,
+        "entities": {
+            "emil": 0.1838487972508591,
+            "kitty": 0.35051546391752575,
+            "alexandra": 0.10051546391752575,
+            "linstrums": 0.35051546391752575,
+            "carl": 0.35051546391752575,
+            "carl linstrum": 0.0,
+            "marie tovesky": 0.35051546391752575,
+            "joe tovesky": 0.35051546391752575
+        }
+    },
+    "2641_a_room_with_a_view_brat.txt": {
+        "general": -0.2159090909090909,
+        "entities": {
+            "bertolini": -0.28409090909090906,
+            "bartlett": -0.07575757575757577,
+            "lucy": 0.0159090909090909,
+            "cockney": 0.2159090909090909,
+            "signora": -0.28409090909090906,
+            "queen": 0.2159090909090909,
+            "poet laureate": 0.2159090909090909,
+            "cuthbert eager": 0.2159090909090909,
+            "m a oxon": 0.2159090909090909,
+            "charlotte": -0.4507575757575757,
+            "arno": -0.4507575757575757,
+            "george": 0.2159090909090909,
+            "beebe": 0.2159090909090909,
+            "honeychurch": 0.2159090909090909,
+            "vicar of st peter": 0.0159090909090909,
+            "peter": 0.0,
+            "florence": 0.2159090909090909,
+            "fiesole": -0.7840909090909091,
+            "settignano": -0.7840909090909091,
+            "prato": 0.8825757575757576
+        }
+    },
+    "271_black_beauty_brat.txt": {
+        "general": -0.16417910447761194,
+        "entities": {
+            "duchess": 0.16417910447761194,
+            "darkie": -0.835820895522388,
+            "dick": -0.16915422885572137,
+            "daniel": 1.164179104477612,
+            "hunt": -0.33582089552238803,
+            "george gordon": 0.16417910447761194,
+            "squire gordon": 0.16417910447761194,
+            "bond": -0.835820895522388,
+            "rob roy": -0.835820895522388
+        }
+    },
+    "2775_the_good_soldier_brat.txt": {
+        "general": -0.1717171717171717,
+        "entities": {
+            "ashburnhams": 0.08838383838383838,
+            "ashburnham leonora": -0.3282828282828283,
+            "leonora forty": 0.1717171717171717,
+            "charles": 0.1717171717171717,
+            "florence": -0.4949494949494949,
+            "hurlbird": 0.1717171717171717,
+            "dowell": 0.1717171717171717,
+            "william penn": 0.1717171717171717,
+            "nirvana": 0.1717171717171717,
+            "edward ashburnham": -0.4949494949494949
+        }
+    },
+    "27_far_from_the_madding_crowd_brat.txt": {
+        "general": -0.2222222222222222,
+        "entities": {
+            "farmer oak": -0.04093567251461988,
+            "gabriel": -0.1111111111111111,
+            "johnson": -0.7777777777777778,
+            "gabriel oak": 0.0,
+            "judas iscariot": 0.2222222222222222
+        }
+    },
+    "2807_to_have_and_to_hold_brat.txt": {
+        "general": 0.0,
+        "entities": {
+            "stockham": 1.0,
+            "smith": 0.0,
+            "opechancanough": 0.0,
+            "percy": -1.0,
+            "michaelmas": 0.0,
+            "john rolfe": -1.0,
+            "dale": 1.0,
+            "ralph": -0.5,
+            "faugh": 1.0,
+            "tom": 0.0,
+            "dick": 0.0,
+            "harry": 0.0,
+            "humph": 0.0,
+            "warwick": -1.0,
+            "edwyn sandys '": 0.42857142857142855,
+            "master wickham": 0.5,
+            "bucke": 1.0,
+            "godspeed": 1.0
+        }
+    },
+    "2814_dubliners_brat.txt": {
+        "general": -0.39285714285714285,
+        "entities": {
+            "sisters": -0.18822393822393818,
+            "cotter": -0.2738095238095238,
+            "flynn": -0.10714285714285715,
+            "jack": 0.39285714285714285,
+            "james flynn": 0.39285714285714285,
+            "r i p": 0.39285714285714285,
+            "p": 0.0,
+            "napoleon bonaparte": 0.39285714285714285,
+            "nannie": 0.39285714285714285
+        }
+    },
+    "2852_the_hound_of_the_baskervilles_brat.txt": {
+        "general": -0.11594202898550725,
+        "entities": {
+            "sherlock holmes": 0.04451345755693582,
+            "james mortimer": 0.24094202898550726,
+            "watson": -0.32850241545893716,
+            "hunt": 0.6159420289855072,
+            "charing cross": 0.11594202898550725,
+            "jackson": 0.11594202898550725,
+            "high barrow": 0.11594202898550725,
+            "jove": 0.11594202898550725
+        }
+    },
+    "2891_howards_end_brat.txt": {
+        "general": -0.09734513274336283,
+        "entities": {
+            "helen": -0.2359882005899705,
+            "meg": -0.10265486725663718,
+            "paul": 0.09734513274336283,
+            "wilcox": 0.18067846607669616,
+            "tibby": -0.15265486725663718,
+            "charles wilcox": 0.43067846607669613,
+            "wilcoxes": 0.09734513274336283,
+            "evie": -0.2359882005899705,
+            "aunt juley": -0.18836915297092288,
+            "helen howards": 0.09734513274336283,
+            "margaret": -0.10265486725663718,
+            "speyer": -0.10265486725663718,
+            "maintz": 0.09734513274336283,
+            "koln": 0.09734513274336283
+        }
+    },
+    "3268_the_mysteries_of_udolpho_brat.txt": {
+        "general": 0.4,
+        "entities": {
+            "m st aubert": 0.24285714285714288,
+            "aubert": 0.0,
+            "quesnel": -0.4,
+            "madame st aubert": 0.35,
+            "nature": 0.2666666666666666,
+            "emily": -0.4,
+            "monsieur": -0.15000000000000002,
+            "garonne": -0.06666666666666671
+        }
+    },
+    "32_herland_brat.txt": {
+        "general": -0.09803921568627451,
+        "entities": {
+            "terry o nicholson": 0.03553921568627451,
+            "nicholson": 0.0,
+            "nick": 0.09803921568627451,
+            "jeff margrave": -0.02696078431372549,
+            "vandyck jennings": 0.09803921568627451,
+            "terry": 0.0
+        }
+    },
+    "33_the_scarlet_letter_brat.txt": {
+        "general": -0.25862068965517243,
+        "entities": {
+            "isaac johnson": 0.25862068965517243,
+            "ann hutchinson": -0.7413793103448276,
+            "hibbins": -0.7413793103448276,
+            "elizabeth": -0.7413793103448276,
+            "this hester prynne": -0.1413793103448276,
+            "dimmesdale": -0.7413793103448276,
+            "hester prynne": 0.0
+        }
+    },
+    "3457_the_man_of_the_forest_brat.txt": {
+        "general": -0.23529411764705882,
+        "entities": {
+            "baldy": 0.23529411764705882,
+            "milt dale": 0.08144796380090497,
+            "wal": -0.2647058823529412,
+            "beasley": -0.05042016806722688,
+            "fellars": -0.7647058823529411,
+            "mebbe": -0.7647058823529411,
+            "moze": -0.19327731092436973,
+            "jim": -0.2091503267973856,
+            "snake anson": -0.08470588235294119,
+            "jim wilson": 0.5686274509803921,
+            "pine": -0.0980392156862745,
+            "ai": -0.5647058823529412,
+            "burt": 0.23529411764705882,
+            "hullo": 1.2352941176470589
+        }
+    },
+    "345_dracula_brat.txt": {
+        "general": -0.11627906976744186,
+        "entities": {
+            "bistritz": 0.11627906976744186,
+            "mina": 0.7829457364341085,
+            "dracula": -0.2837209302325582,
+            "attila": 0.11627906976744186,
+            "mem": 1.1162790697674418,
+            "herr englishman": 0.11627906976744186,
+            "jonathan harker": 0.11627906976744186,
+            "carpathians": 0.11627906976744186
+        }
+    },
+    "351_of_human_bondage_brat.txt": {
+        "general": -0.3142857142857143,
+        "entities": {
+            "philip": -0.07032967032967036,
+            "carey": -0.019047619047619035,
+            "watkin": -0.08571428571428574,
+            "hulloa": 0.3142857142857143,
+            "emma": -0.18571428571428572,
+            "uncle william": -0.35238095238095235,
+            "henrietta watkin": -0.019047619047619035
+        }
+    },
+    "367_country_of_the_pointed_firs_brat.txt": {
+        "general": -0.07017543859649122,
+        "entities": {
+            "dunnet landing": 0.07017543859649122,
+            "todd": -0.06315789473684211,
+            "almira todd": 0.07017543859649122
+        }
+    },
+    "36_the_war_of_the_worlds_brat.txt": {
+        "general": -0.2112676056338028,
+        "entities": {
+            "schiaparelli": -0.7887323943661972,
+            "lavelle": 1.2112676056338028,
+            "ogilvy": -0.1887323943661972,
+            "ottershaw": 0.2112676056338028,
+            "chertsey": 0.2112676056338028
+        }
+    },
+    "4051_lady_bridget_in_the_nevernever_land_a_story_of_australian_life_brat.txt": {
+        "general": -0.16216216216216217,
+        "entities": {
+            "gildea": 0.16216216216216217,
+            "joan gildea": 0.6621621621621622,
+            "gibbs": -0.23783783783783785,
+            "joseph chamberlain": 0.16216216216216217,
+            "colin mckeith": 0.16216216216216217,
+            "biddy": -0.33783783783783783,
+            "bridget o'hara": -0.5045045045045045,
+            "eliza countess": 0.16216216216216217,
+            "gaverick": 0.16216216216216217,
+            "luke tallant": 0.4954954954954955,
+            "rosamond": 0.6621621621621622,
+            "gavericks": 0.16216216216216217,
+            "chris": 0.6621621621621622,
+            "molly": 0.6621621621621622
+        }
+    },
+    "41286_miss_marjoribanks_brat.txt": {
+        "general": -0.2857142857142857,
+        "entities": {
+            "marjoribanks": 0.24025974025974023,
+            "lucilla": 0.1948051948051948,
+            "doctor": -0.4920634920634921,
+            "ellis": 0.2857142857142857,
+            "lake": -0.7142857142857143,
+            "carlingford": -0.7142857142857143
+        }
+    },
+    "41_the_legend_of_sleepy_hollow_brat.txt": {
+        "general": -0.18,
+        "entities": {
+            "hendrick hudson": 0.5133333333333333,
+            "headless horseman of sleepy hollow": -0.1007017543859649,
+            "ichabod crane": -0.42,
+            "yost van houten": -0.8200000000000001
+        }
+    },
+    "4217_a_portrait_of_the_artist_as_a_young_man_brat.txt": {
+        "general": -0.1949685534591195,
+        "entities": {
+            "betty byrne": 0.1949685534591195,
+            "uncle charles": 0.5283018867924528,
+            "dante": 0.1949685534591195,
+            "michael davitt": 0.1949685534591195,
+            "parnell": 0.1949685534591195,
+            "vances": 0.1949685534591195,
+            "eileen": 0.1949685534591195,
+            "stephen": 0.1949685534591195,
+            "rody kickham": -0.5550314465408805,
+            "nasty roche": -0.6050314465408806,
+            "stephen dedalus": 0.1949685534591195,
+            "cantwell": 0.1949685534591195,
+            "cecil": 0.1949685534591195,
+            "jack lawton": 0.1949685534591195,
+            "hamilton rowan": -0.8050314465408805,
+            "abbey": 0.1949685534591195,
+            "cornwell": 1.1949685534591195,
+            "wolsey": 0.1949685534591195,
+            "wells": -0.8050314465408805,
+            "brigid": -0.8050314465408805,
+            "arnall": 0.5949685534591196,
+            "simon moonan": -0.3050314465408805,
+            "mcglade": -0.8050314465408805,
+            "york": -0.1383647798742138,
+            "bravo lancaster": 1.1949685534591195
+        }
+    },
+    "4276_north_and_south_brat.txt": {
+        "general": -0.041666666666666664,
+        "entities": {
+            "edith": 0.004629629629629629,
+            "margaret": -0.010964912280701754,
+            "titania": 0.041666666666666664,
+            "lennox": -0.125,
+            "shaw": -0.15833333333333335,
+            "helstone": 0.041666666666666664,
+            "grey": 0.5416666666666666,
+            "gibson": 0.041666666666666664,
+            "helen": 0.041666666666666664,
+            "aunt shaw": 0.16666666666666666,
+            "newton": -0.20833333333333334,
+            "hale": 0.041666666666666664
+        }
+    },
+    "4300_ulysses_brat.txt": {
+        "general": -0.029239766081871343,
+        "entities": {
+            "buck mulligan": -0.31451023391812866,
+            "introibo": 0.029239766081871343,
+            "stephen dedalus": 0.070906432748538,
+            "christine": 0.029239766081871343,
+            "malachi mulligan": -0.47076023391812866,
+            "haines": 0.029239766081871343,
+            "kinch": 0.029239766081871343,
+            "algy": 1.0292397660818713,
+            "thalatta": 0.029239766081871343,
+            "connolly norman": 0.029239766081871343,
+            "ursula": 0.029239766081871343,
+            "caliban": 0.029239766081871343,
+            "wilde": 1.0292397660818713,
+            "seymour": -0.9707602339181287,
+            "clive kempthorpe": -0.9707602339181287
+        }
+    },
+    "432_the_ambassadors_brat.txt": {
+        "general": -0.23076923076923078,
+        "entities": {
+            "strether": -0.10256410256410253,
+            "waymarsh": -0.43589743589743585,
+            "chester": -0.7692307692307692,
+            "milrose connecticut": 0.5641025641025641,
+            "munsters": -0.7692307692307692
+        }
+    },
+    "434_the_circular_staircase_brat.txt": {
+        "general": -0.18461538461538463,
+        "entities": {
+            "liddy": -0.3153846153846154,
+            "jamieson": 0.18461538461538463,
+            "halsey": 0.6846153846153846,
+            "gertrude": 0.4346153846153846,
+            "mary anne": -0.8153846153846154,
+            "paul armstrong": 0.017948717948717968,
+            "doctor walker": 0.5179487179487179,
+            "louise armstrong": 1.1846153846153846,
+            "arnold armstrong": -0.8153846153846154,
+            "ralston": 0.18461538461538463,
+            "burke": -0.8153846153846154,
+            "thomas johnson": -0.3153846153846154,
+            "armstrongs": 0.18461538461538463,
+            "innes": -0.8153846153846154,
+            "tai": -0.8153846153846154
+        }
+    },
+    "44_the_song_of_the_lark_brat.txt": {
+        "general": -0.2571428571428571,
+        "entities": {
+            "howard archie": -0.0761904761904762,
+            "larry": 0.2571428571428571,
+            "napoleon iii": 0.2571428571428571,
+            "kronborg": 0.03492063492063491,
+            "fay templeton": 0.2571428571428571,
+            "peter kronborg": 0.2571428571428571,
+            "thea": -0.24285714285714288
+        }
+    },
+    "45_anne_of_green_gables_brat.txt": {
+        "general": -0.15384615384615385,
+        "entities": {
+            "rachel lynde": -0.11085972850678733,
+            "thomas lynde": 0.15384615384615385,
+            "avonlea": 0.15384615384615385,
+            "matthew cuthbert": -0.03133903133903132,
+            "peter morrison": 0.15384615384615385,
+            "william j blair": 0.15384615384615385,
+            "blair": 0.0,
+            "carmody": 0.15384615384615385,
+            "marilla": 0.010989010989011005,
+            "cuthberts": -0.8461538461538461,
+            "lombardies": 1.1538461538461537,
+            "marilla cuthbert": 0.0
+        }
+    },
+    "472_the_house_behind_the_cedars_brat.txt": {
+        "general": -0.016129032258064516,
+        "entities": {
+            "john warwick": -0.03942652329749104,
+            "sherman": 0.016129032258064516,
+            "warwick": 0.0,
+            "aunt lyddy": 1.0161290322580645,
+            "straight": 0.2661290322580645,
+            "tippecanoe": -0.9838709677419355,
+            "tyler": -0.9838709677419355
+        }
+    },
+    "502_desert_gold_brat.txt": {
+        "general": -0.2636363636363636,
+        "entities": {
+            "cameron": 0.08414918414918413
+        }
+    },
+    "514_little_women_brat.txt": {
+        "general": -0.3466666666666667,
+        "entities": {
+            "jo": -0.07438596491228067,
+            "meg": -0.5422222222222222,
+            "amy": 0.12444444444444447,
+            "beth": 0.04666666666666669,
+            "undine": 0.3466666666666667,
+            "sintran": 0.3466666666666667,
+            "faber": 1.3466666666666667,
+            "papa": -0.31999999999999995,
+            "josephine": 0.3466666666666667,
+            "mouse": -0.6533333333333333,
+            "margaret": 1.3466666666666667,
+            "elizabeth": 0.3466666666666667,
+            "marmee": 0.3466666666666667
+        }
+    },
+    "521_the_life_and_adventures_of_robinson_crusoe_brat.txt": {
+        "general": -0.48148148148148145,
+        "entities": {
+            "robinson": 1.4814814814814814,
+            "robinson kreutznaer": 1.4814814814814814,
+            "crusoe": 1.4814814814814814,
+            "colonel lockhart": 0.48148148148148145
+        }
+    },
+    "5230_the_invisible_man_a_grotesque_romance_brat.txt": {
+        "general": -0.30303030303030304,
+        "entities": {
+            "millie": -0.29696969696969694,
+            "hall": -0.26839826839826836
+        }
+    },
+    "5348_ragged_dick_or_street_life_in_new_york_with_the_bootblacks_brat.txt": {
+        "general": -0.41228070175438597,
+        "entities": {
+            "dick": -0.1759545923632611,
+            "lewis napoleon": 0.07894736842105265,
+            "greyson": -0.25438596491228066,
+            "ragged dick": -0.08771929824561403,
+            "tony pastor": 0.41228070175438597
+        }
+    },
+    "541_the_age_of_innocence_brat.txt": {
+        "general": 0.2222222222222222,
+        "entities": {
+            "christine nilsson": 0.37777777777777777,
+            "faust": 0.1111111111111111,
+            "madame nilsson": 0.7777777777777778,
+            "brown": 0.7777777777777778,
+            "newland archer": -0.1633986928104575,
+            "m'ama": 0.7777777777777778,
+            "faust - capoul": 0.1111111111111111,
+            "manson mingott": -0.2222222222222222,
+            "lovell mingott": -0.2222222222222222,
+            "welland": -0.2222222222222222,
+            "luther burbank": 0.7777777777777778,
+            "m capoul": 0.0,
+            "may welland": -0.2222222222222222,
+            "lohengrin": -0.2222222222222222,
+            "lawrence lefferts": -0.6222222222222222,
+            "larry lefferts": -0.2222222222222222,
+            "sillerton jackson": -1.2222222222222223
+        }
+    },
+    "543_main_street_brat.txt": {
+        "general": -0.06930693069306931,
+        "entities": {
+            "chippewas": 0.06930693069306931,
+            "brieux": -0.9306930693069306,
+            "carol milford": 0.06930693069306931,
+            "voltaire": 0.06930693069306931,
+            "darwin": 0.06930693069306931,
+            "robert ingersoll": 0.06930693069306931,
+            "blodgett": 0.21216407355021216,
+            "milton": 0.06930693069306931,
+            "carlyle": 0.06930693069306931,
+            "caesar": 0.06930693069306931,
+            "stewart snyder": -0.5306930693069307,
+            "bernard shaw": -0.9306930693069306,
+            "elsie": -0.9306930693069306
+        }
+    },
+    "550_silas_marner_brat.txt": {
+        "general": -0.47058823529411764,
+        "entities": {
+            "silas marner": 0.0,
+            "merry england": -0.5294117647058824,
+            "raveloe": 0.303921568627451,
+            "north": 0.47058823529411764,
+            "jem rodney": -0.3294117647058824,
+            "macey": -0.5294117647058824,
+            "sally oates": -0.5294117647058824
+        }
+    },
+    "599_vanity_fair_brat.txt": {
+        "general": 0.020833333333333332,
+        "entities": {
+            "chiswick mall": 0.2518939393939394,
+            "pinkerton": -0.2839912280701754,
+            "jemima pinkerton": -0.3333333333333333,
+            "sedley": -0.020833333333333332,
+            "sambo": -0.020833333333333332,
+            "semiramis": -0.020833333333333332,
+            "hammersmith": -0.020833333333333332,
+            "johnson": -0.020833333333333332,
+            "chapone": -0.020833333333333332,
+            "amelia": 0.2648809523809524,
+            "john sedley": 0.0,
+            "birch": -0.5208333333333334,
+            "amelia sedley": 0.0,
+            "madam": 0.4791666666666667,
+            "barbara pinkerton": 0.9791666666666666,
+            "sharp": -0.42083333333333334,
+            "samuel johnson": -0.020833333333333332,
+            "lexicographer": -0.020833333333333332,
+            "becky sharp": -1.0208333333333333,
+            "dixonary": -0.020833333333333332,
+            "minerva": -0.020833333333333332,
+            "billington": 0.9791666666666666,
+            "hillisberg": 0.9791666666666666,
+            "parisot": 0.9791666666666666,
+            "briggs": -0.020833333333333332,
+            "saltire": -0.020833333333333332,
+            "dexter": -0.020833333333333332,
+            "swartz": -0.020833333333333332,
+            "st kitt": -0.020833333333333332,
+            "floss": -0.020833333333333332
+        }
+    },
+    "6053_evelina_or_the_history_of_a_young_ladys_entrance_into_the_world_brat.txt": {
+        "general": -0.4915254237288136,
+        "entities": {
+            "duval": 0.32485875706214695,
+            "lady belmont": 0.15819209039548027,
+            "evelyn": 0.06295399515738503,
+            "mirvan": 0.15819209039548027,
+            "madame duval": 0.30970724191063176,
+            "m howard": 0.6915254237288135,
+            "howard": 0.0,
+            "ladyship": 0.32485875706214695,
+            "villars": -0.1084745762711864,
+            "john belmont": -0.5084745762711864,
+            "duvals": -0.5084745762711864
+        }
+    },
+    "60_the_scarlet_pimpernel_brat.txt": {
+        "general": -0.2711864406779661,
+        "entities": {
+            "king": 0.2711864406779661,
+            "queen": 0.2711864406779661,
+            "sergeant bibot": 0.1711864406779661,
+            "madame la guillotine": 0.20451977401129945,
+            "citoyen foucquier -tinville": -0.14057826520438682,
+            "robespierre": 1.271186440677966,
+            "danton": 1.271186440677966,
+            "grospierre": -0.2843691148775895,
+            "citoyen foucquier - tinville": 0.0,
+            "citoyen grospierre": 0.0,
+            "citoyen bibot": 0.0,
+            "scarlet pimpernel": 0.2711864406779661
+        }
+    },
+    "62_a_princess_of_mars_brat.txt": {
+        "general": -0.2777777777777778,
+        "entities": {
+            "john carter": 0.2777777777777778,
+            "jack carter": 0.2777777777777778,
+            "james k powell": 0.2777777777777778,
+            "powell": 0.0
+        }
+    },
+    "6593_history_of_tom_jones_a_foundling_brat.txt": {
+        "general": -0.16326530612244897,
+        "entities": {
+            "pope": 0.16326530612244897,
+            "allworthy": -0.17006802721088435,
+            "bridget allworthy": 0.16326530612244897,
+            "such-a-one": -0.8367346938775511,
+            "deborah wilkins": -0.8367346938775511
+        }
+    },
+    "711_allan_quatermain_brat.txt": {
+        "general": -0.08536585365853659,
+        "entities": {
+            "yarn": 0.08536585365853659,
+            "harry": -0.9146341463414634,
+            "henry curtis": 0.2853658536585366,
+            "john good": 0.2936991869918699,
+            "allan quatermain": -0.6646341463414634,
+            "hunter quatermain": -0.9146341463414634,
+            "macumazahn": -0.9146341463414634,
+            "anglicè": -0.9146341463414634,
+            "gagool": 0.08536585365853659,
+            "solomon": 0.5853658536585366,
+            "george": 0.08536585365853659,
+            "mt kenia": 0.08536585365853659,
+            "ditto": 1.0853658536585367
+        }
+    },
+    "730_oliver_twist_brat.txt": {
+        "general": -0.1694915254237288,
+        "entities": {
+            "oliver": -0.3305084745762712,
+            "nature": 0.1694915254237288,
+            "thingummy": 0.1694915254237288,
+            "oliver twist": -0.1638418079096045
+        }
+    },
+    "73_the_red_badge_of_courage_an_episode_of_the_american_civil_war_brat.txt": {
+        "general": -0.21739130434782608,
+        "entities": {
+            "jim": 0.21739130434782608,
+            "greeklike": 0.21739130434782608,
+            "ma": 0.21739130434782608,
+            "henry": 0.09239130434782608
+        }
+    },
+    "74_the_adventures_of_tom_sawyer_brat.txt": {
+        "general": -0.25,
+        "entities": {
+            "tom": 0.04166666666666666,
+            "polly": -0.25,
+            "ai": -0.5,
+            "good book": 0.5833333333333333,
+            "jim": 0.25,
+            "sid": -0.08333333333333331,
+            "aunt polly": 0.08333333333333334,
+            "sidney": -0.75,
+            "siddy": 0.25
+        }
+    },
+    "766_david_copperfield_brat.txt": {
+        "general": -0.25,
+        "entities": {
+            "trotwood": -0.25,
+            "betsey": -0.08333333333333331,
+            "begum": 0.25,
+            "david copperfield": 0.25
+        }
+    },
+    "768_wuthering_heights_brat.txt": {
+        "general": -0.41379310344827586,
+        "entities": {
+            "heathcliff": 0.270935960591133,
+            "lockwood": 0.41379310344827586,
+            "thrushcross grange": -0.5862068965517242,
+            "joseph": -0.33620689655172414,
+            "hareton earnshaw": -0.5862068965517242
+        }
+    },
+    "76_adventures_of_huckleberry_finn_brat.txt": {
+        "general": -0.3469387755102041,
+        "entities": {
+            "mark twain": 0.3469387755102041,
+            "aunt polly": 0.3469387755102041,
+            "mary": 0.3469387755102041,
+            "tom": 0.3469387755102041,
+            "widow douglas": -0.22448979591836732,
+            "thatcher": 0.3469387755102041,
+            "tom sawyer": 0.09693877551020408,
+            "moses": -0.653061224489796,
+            "bulrushers": -0.653061224489796,
+            "watson": -0.15306122448979592,
+            "huckleberry": -0.653061224489796,
+            "jim": 0.6802721088435374
+        }
+    },
+    "77_the_house_of_the_seven_gables_brat.txt": {
+        "general": -0.3877551020408163,
+        "entities": {
+            "matthew maule": -0.0622448979591837,
+            "pyncheon": 0.17346938775510204,
+            "thomas maule": 0.3877551020408163
+        }
+    },
+    "78_tarzan_of_the_apes_brat.txt": {
+        "general": -0.3508771929824561,
+        "entities": {
+            "john clayton": 0.3508771929824561,
+            "greystoke": 0.18421052631578946,
+            "alice rutherford": 0.3508771929824561,
+            "lord greystoke": 0.3508771929824561,
+            "fuwalda": 0.017543859649122806,
+            "lady alice": -0.14912280701754388,
+            "lady greystoke": 0.0,
+            "queen": 0.3508771929824561,
+            "black michael": -0.506265664160401,
+            "claytons": -0.6491228070175439
+        }
+    },
+    "805_this_side_of_paradise_brat.txt": {
+        "general": 0.01639344262295082,
+        "entities": {
+            "beatrice amory blaine": 0.046106557377049176,
+            "byron": -1.0163934426229508,
+            "beatrice o'hara": -0.01639344262295082,
+            "stephen blaine": -0.5163934426229508,
+            "beatrice blaine": 0.0,
+            "cardinal vitori": 0.9836065573770492,
+            "queen margherita": 0.9836065573770492,
+            "dare": -1.0163934426229508,
+            "frank": -1.0163934426229508,
+            "clothilde": 0.9836065573770492,
+            "bernhardt": 0.9836065573770492,
+            "brahms": -0.01639344262295082,
+            "mozart": -0.01639344262295082,
+            "beethoven": -0.01639344262295082,
+            "bobby": -0.01639344262295082,
+            "barbara": -0.01639344262295082,
+            "blaines": -0.01639344262295082,
+            "wiston": -0.01639344262295082,
+            "darcy": 0.9836065573770492
+        }
+    },
+    "829_gullivers_travels_into_several_remote_nations_of_the_world_brat.txt": {
+        "general": -0.20253164556962025,
+        "entities": {
+            "james bates": 0.5358649789029536,
+            "john": 0.20253164556962025,
+            "leyden": 0.7025316455696202,
+            "swallow": 1.2025316455696202,
+            "abraham pannel": 1.2025316455696202,
+            "mary burton": 0.20253164556962025,
+            "edmund burton": 0.20253164556962025,
+            "william prichard": 0.20253164556962025,
+            "antelope": 0.20253164556962025,
+            "hekinah": -0.4641350210970464,
+            "peplom": 1.2025316455696202
+        }
+    },
+    "84_frankenstein_or_the_modern_prometheus_brat.txt": {
+        "general": 0.0875,
+        "entities": {
+            "saville": -0.0875,
+            "margaret": -0.0875,
+            "uncle thomas '": -0.0875,
+            "homer": -0.0875,
+            "shakespeare": -0.0875,
+            "r walton": -0.0875,
+            "walton": 0.0,
+            "2 archangel": -0.5875
+        }
+    },
+    "876_life_in_the_ironmills_or_the_korl_woman_brat.txt": {
+        "general": -0.37755102040816324,
+        "entities": {
+            "hugh wolfe": -0.022448979591836782,
+            "wolfes": 0.37755102040816324,
+            "deborah": 0.044217687074829926,
+            "christ": 0.37755102040816324,
+            "dah": 0.37755102040816324,
+            "potts": 0.37755102040816324,
+            "inteet": 0.37755102040816324,
+            "kit small": 0.37755102040816324,
+            "begorra": 0.37755102040816324
+        }
+    },
+    "8867_the_magnificent_ambersons_brat.txt": {
+        "general": -0.29310344827586204,
+        "entities": {
+            "amberson": 0.29310344827586204,
+            "ambersons": 0.9597701149425286,
+            "magnificent lorenzo": 1.293103448275862,
+            "derby": -0.20689655172413796
+        }
+    },
+    "932_the_fall_of_the_house_of_usher_brat.txt": {
+        "general": -0.3114754098360656,
+        "entities": {
+            "house of usher": 0.2603805193251167,
+            "roderick usher": -0.1885245901639344,
+            "\" house of usher \"": 1.3114754098360657
+        }
+    },
+    "940_the_last_of_the_mohicans_a_narrative_of_1757_brat.txt": {
+        "general": -0.2641509433962264,
+        "entities": {
+            "horican": 0.2641509433962264,
+            "munro": 1.2641509433962264,
+            "william henry": -0.2358490566037736,
+            "fort edward": 0.0641509433962264,
+            "scotchman": -0.7358490566037736,
+            "montcalm": -0.7358490566037736,
+            "webb": -0.2358490566037736
+        }
+    },
+    "95_the_prisoner_of_zenda_brat.txt": {
+        "general": -0.10909090909090909,
+        "entities": {
+            "rassendylls": -0.29090909090909095,
+            "elphbergs": -0.6409090909090909,
+            "rudolf": 0.10909090909090909,
+            "rose": -0.5159090909090909,
+            "burlesdon": 0.10909090909090909,
+            "robert": 0.6805194805194805,
+            "countess amelia": -0.09090909090909093,
+            "lady burlesdon": 0.4424242424242424,
+            "george ii": 0.10909090909090909,
+            "king": -0.39090909090909093,
+            "prince of wales": -0.20238450074515651,
+            "rudolf third of ruritania": -0.05757575757575757,
+            "third of ruritania": 0.0,
+            "prince rudolf": 0.0,
+            "james": 0.10909090909090909,
+            "earl of burlesdon": 0.10909090909090909,
+            "baron rassendyll": 0.10909090909090909,
+            "jacob borrodaile": 0.7090909090909091
+        }
+    },
+    "969_the_tenant_of_wildfell_hall_brat.txt": {
+        "general": -0.22448979591836735,
+        "entities": {
+            "rose": 0.42448979591836733,
+            "fergus": -0.10884353741496597,
+            "badger-baiting": -0.7755102040816326,
+            "wilsons": -0.025510204081632654,
+            "gilbert": -0.7755102040816326,
+            "eliza millward": -0.7755102040816326,
+            "jane wilson": 0.22448979591836735,
+            "graham": 0.22448979591836735
+        }
+    },
+    "974_the_secret_agent_a_simple_tale_brat.txt": {
+        "general": -0.24761904761904763,
+        "entities": {
+            "verloc": 0.047619047619047616,
+            "gong": 0.24761904761904763,
+            "winnie verloc": 0.08095238095238097,
+            "stevie": -0.7523809523809524,
+            "verlocs": -0.7523809523809524,
+            "stephen": -0.7523809523809524
+        }
+    },
+    "9830_the_beautiful_and_damned_brat.txt": {
+        "general": -0.046153846153846156,
+        "entities": {
+            "anthony patch": 0.046153846153846156,
+            "holy ghost": 0.046153846153846156,
+            "adam j patch": 0.5461538461538462,
+            "anthony comstock": 0.046153846153846156,
+            "adam patch": 0.0,
+            "alicia withers": 1.0461538461538462,
+            "adam ulysses patch": 0.7128205128205127,
+            "henrietta lebrune": 0.046153846153846156,
+            "anthony comstock patch": 0.0,
+            "fauntleroy": 0.046153846153846156,
+            "henrietta lebrune patch": 0.0,
+            "hardy": -0.9538461538461538,
+            "keats": -0.9538461538461538,
+            "maury noble": 1.0461538461538462
+        }
+    }
+}

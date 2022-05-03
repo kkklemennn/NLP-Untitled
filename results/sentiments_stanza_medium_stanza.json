@@ -1,0 +1,96 @@
+{
+    "Hills Like White Elephants.txt": {
+        "general": -0.13297872340425532,
+        "entities": {
+            "ernest hemingway": 0.13297872340425532,
+            "jig": -0.3670212765957447
+        }
+    },
+    "Leiningen Versus the Ants.txt": {
+        "general": -0.47874720357941836,
+        "entities": {
+            "carl stephenson": -0.5212527964205816,
+            "leiningen": 0.13026235509456985,
+            "hood": -0.5212527964205816,
+            "dullards": -0.5212527964205816,
+            "dawn": 0.8120805369127517,
+            "macbeth": 0.47874720357941836,
+            "birnam wood": 0.07874720357941833,
+            "scot": -0.5212527964205816,
+            "dante": -0.5212527964205816,
+            "spry": -0.5212527964205816,
+            "swift": 0.47874720357941836
+        }
+    },
+    "The Gift of the Magi.txt": {
+        "general": -0.00546448087431694,
+        "entities": {
+            "della": -0.04215456674473068,
+            "james dillingham young": 0.13046448087431695,
+            "james d. young": 0.00546448087431694,
+            "jim": 0.00546448087431694,
+            "james dillingham youngs": 1.005464480874317,
+            "sofronie": 0.00546448087431694,
+            "combs": 0.755464480874317,
+            "christ-child": 1.005464480874317
+        }
+    },
+    "The Lady or the Tiger Original.txt": {
+        "general": -0.0891089108910891,
+        "entities": {
+            "frank r. stockton": 0.0891089108910891
+        }
+    },
+    "The Most Dangerous Game.txt": {
+        "general": -0.1971223021582734,
+        "entities": {
+            "richard connell": 0.1971223021582734,
+            "whitney": 0.1971223021582734,
+            "rainsford": 0.004529709565680801,
+            "purdey": 0.1971223021582734,
+            "nielsen": 0.1971223021582734,
+            "sanger rainsford": 0.5304556354916067,
+            "zaroff": 0.1971223021582734,
+            "ivan": -0.23144912641315515,
+            "great white czar": 0.28045563549160674,
+            "ennui": -0.8028776978417266,
+            "suzette": -0.8028776978417266,
+            "cossack": 0.0721223021582734,
+            "veuve clicquot": 0.1971223021582734,
+            "lazarus": 0.6971223021582734,
+            "au revoir": 0.1971223021582734,
+            "dusk": 0.1971223021582734,
+            "marcus aurelius": 0.1971223021582734
+        }
+    },
+    "The Ransom of Red Chief.txt": {
+        "general": -0.16725978647686832,
+        "entities": {
+            "ransom of red chief": -0.025047905830824002,
+            "o. henry": 0.16725978647686832,
+            "bill driscoll": -0.08670846749138564,
+            "ebenezer dorset": 0.11170423092131276,
+            "old hank": 0.09583121504829689,
+            "geronimo": 0.16725978647686832,
+            "jimmy talbot": 0.16725978647686832,
+            "ed walker": 0.16725978647686832,
+            "amos murray": 0.16725978647686832,
+            "sam": 0.0005931198102016588,
+            "aunt jane": 0.16725978647686832,
+            "david": 0.16725978647686832,
+            "goliath": 0.16725978647686832,
+            "herod": 0.16725978647686832,
+            "black scout": 0.16725978647686832,
+            "summit": 0.0763506955677774,
+            "elder ebenezer dorset": 0.16725978647686832,
+            "johnny": 0.16725978647686832
+        }
+    },
+    "The Tell Tale Heart.txt": {
+        "general": -0.3375,
+        "entities": {
+            "edgar allan poe": 1.3375,
+            "madmen": -0.6625
+        }
+    }
+}

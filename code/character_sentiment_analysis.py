@@ -103,55 +103,69 @@ def get_sentiment(novel, entities):
 	sentiment = {}
 	general_sentiment = []
 	for sentence in sent_text:
-		sentiment_score = afinn.score(sentence)
+		sentiment_score = afinn.score(sentence) / 5
 		general_sentiment.append(sentiment_score)
 		for entity in entities:
 			if entity in sentence.lower():
 				if entity not in sentiment: sentiment[entity] = []
-				sentiment[entity].append(sentiment_score / 5)
+				sentiment[entity].append(sentiment_score)
 				# print(sentiment_score)
 	for entity in entities:
 		if entity in sentiment: sentiment[entity] = np.mean(sentiment[entity])
 		else: sentiment[entity] = 0.0
 	general_sentiment = np.mean(general_sentiment)
-	sentiment_dict["general"] = general_sentiment / 5
+	sentiment_dict["general"] = general_sentiment
 	sentiment_dict["entities"] = sentiment
 	return sentiment_dict
+
+files = os.listdir(short_stories_path)
+sentiments = {}
+for index, file in enumerate(files):
+	novel = get_book_string(short_stories_path + file)
+	entities = get_entities(short_stories_path + file, model)
+	sentiments[file] = get_sentiment(novel, entities)
+
+with open("../results/sentiments_stanza_short_afinn.json", "w+", encoding="utf-8") as outfile:
+    json.dump(sentiments, outfile, indent=4, ensure_ascii=False)
+
+
+# %%
+# =========== SENTIMENT USING STANZA ===========
+
+model = "stanza"
 
 files = os.listdir(litbank_stories_path)
 sentiments = {}
 for index, file in enumerate(files):
+	print(file)
+	sentiments[file] = {}
 	novel = get_book_string(litbank_stories_path + file)
 	entities = get_entities(litbank_stories_path + file, model)
-	sentiments[file] = get_sentiment(novel, entities)
+	sentiments_normalized = get_sentiments_for_characters_naive(entities, novel, True)
+	sentiments[file]['general'] = sentiments_normalized['stats']['avg_sentiment']
+	sentiment = {}
+	for entity in entities:
+		if entity in sentiments_normalized: sentiment[entity] = sentiments_normalized[entity]['avg_sentiment']
+		else: sentiment[entity] = 0.0
+	sentiments[file]['entities'] = sentiment
+	# if index > 0: break
 
-with open("../results/sentiments_stanza_litbank_afinn.json", "w+", encoding="utf-8") as outfile:
+with open("../results/sentiments_stanza_litbank_stanza.json", "w+", encoding="utf-8") as outfile:
     json.dump(sentiments, outfile, indent=4, ensure_ascii=False)
-# %%
-file_name = "174_the_picture_of_dorian_gray_brat.txt"
-model = "stanza"
-
-novel = get_book_string(litbank_stories_path + file_name)
-
-#sentiments = get_sentiments_for_characters_naive(['luka', 'jan', 'martin'], 'Luka is very friendly. Jan is very mean. Martin is ok.', False)
-entities = get_entities(litbank_stories_path + file_name, model)
-#sentiments = get_sentiments_for_characters_naive(entities, novel, False)
-sentiments_normalized = get_sentiments_for_characters_naive(entities, novel, True)
 
 
+# def print_stanza_sentiments(sentiments):
+# 	if (sentiments is None):
+# 		print("Sentiment analysis failed.")
+# 	else:
+# 		print("Number of sentences :", sentiments["stats"]["num_sentences"])
+# 		print("average Sentiment :", sentiments["stats"]["avg_sentiment"])
+# 		for key in sentiments:
+# 			if key != 'stats':
+# 				print("Stats for character(avg) >>",key, "<< ", sentiments[key]['avg_sentiment'] ) 
 
-def print_stanza_sentiments(sentiments):
-	if (sentiments is None):
-		print("Sentiment analysis failed.")
-	else:
-		print("Number of sentences :", sentiments["stats"]["num_sentences"])
-		print("average Sentiment :", sentiments["stats"]["avg_sentiment"])
-		for key in sentiments:
-			if key != 'stats':
-				print("Stats for character(avg) >>",key, "<< ", sentiments[key]['avg_sentiment'] ) 
 
-
-print("========= ", file_name," =========")
-print_stanza_sentiments(sentiments_normalized)
+# print("========= ", file_name," =========")
+# print_stanza_sentiments(sentiments_normalized)
 
 # %%

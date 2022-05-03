@@ -1,0 +1,575 @@
+{
+    "Androcles.txt": {
+        "general": -0.2857142857142857,
+        "entities": {
+            "androcles": 0.1746031746031746,
+            "lion": -0.38095238095238093
+        }
+    },
+    "Avaricious and Envious.txt": {
+        "general": -0.375,
+        "entities": {
+            "avaricious": 0.375
+        }
+    },
+    "Belling the Cat.txt": {
+        "general": -0.1111111111111111,
+        "entities": {
+            "cat": 0.1111111111111111
+        }
+    },
+    "Hercules and the Waggoner.txt": {
+        "general": -0.2857142857142857,
+        "entities": {
+            "hercules": 0.0357142857142857,
+            "waggoner": -0.047619047619047616
+        }
+    },
+    "The Ant and the Grasshopper.txt": {
+        "general": 0.0,
+        "entities": {
+            "ant": 0.25,
+            "grasshopper": -0.3333333333333333
+        }
+    },
+    "The Ass and the Lapdog.txt": {
+        "general": 0.0,
+        "entities": {
+            "farmer": 0.14285714285714285,
+            "lapdog": 0.2,
+            "ass": 0.0
+        }
+    },
+    "The Ass in the Lion’s Skin.txt": {
+        "general": 0.16666666666666666,
+        "entities": {
+            "lion": -1.1666666666666667,
+            "ass": -0.5,
+            "fox": -0.16666666666666666
+        }
+    },
+    "The Ass’s Brains.txt": {
+        "general": -0.3333333333333333,
+        "entities": {
+            "lion": -0.26666666666666666,
+            "fox": -0.26666666666666666,
+            "ass": -0.16666666666666669
+        }
+    },
+    "The Bald Man and the Fly.txt": {
+        "general": -0.3333333333333333,
+        "entities": {
+            "bald man": 0.047619047619047616,
+            "fly": 0.0,
+            "man": 0.0
+        }
+    },
+    "The Bat, the Birds, and the Beasts.txt": {
+        "general": -0.14285714285714285,
+        "entities": {
+            "bat": -0.10714285714285715,
+            "birds": 0.39285714285714285
+        }
+    },
+    "The Belly and the Members.txt": {
+        "general": -0.6666666666666666,
+        "entities": {
+            "belly": 0.16666666666666663,
+            "mouth": -0.33333333333333337,
+            "legs": -0.33333333333333337
+        }
+    },
+    "The Buffoon and the Countryman.txt": {
+        "general": -0.5,
+        "entities": {
+            "buffoon": 0.0,
+            "countryman": -0.16666666666666663
+        }
+    },
+    "The Bundle of Sticks.txt": {
+        "general": -0.2222222222222222,
+        "entities": {
+            "bundle of sticks": 0.1111111111111111
+        }
+    },
+    "The Cat-Maiden.txt": {
+        "general": 0.09090909090909091,
+        "entities": {
+            "cat-maiden": -0.09090909090909091,
+            "jupiter": -0.09090909090909091,
+            "venus": -0.09090909090909091
+        }
+    },
+    "The Cock and the Pearl.txt": {
+        "general": -0.6,
+        "entities": {
+            "cock": -0.4,
+            "pearl": 0.09999999999999998,
+            "master cock": -0.4
+        }
+    },
+    "The Crow and the Pitcher.txt": {
+        "general": -0.1,
+        "entities": {
+            "crow": -0.9,
+            "pitcher": -0.2333333333333333
+        }
+    },
+    "The Dog and the Shadow.txt": {
+        "general": -0.14285714285714285,
+        "entities": {
+            "dog": 0.14285714285714285
+        }
+    },
+    "The Dog and the Wolf.txt": {
+        "general": -0.38461538461538464,
+        "entities": {
+            "dog": 0.25961538461538464,
+            "wolf": 0.05128205128205132
+        }
+    },
+    "The Dog in the Manger.txt": {
+        "general": -0.75,
+        "entities": {
+            "ox": 0.0,
+            "manger": 0.08333333333333337
+        }
+    },
+    "The Eagle and the Arrow.txt": {
+        "general": -0.5,
+        "entities": {}
+    },
+    "The Fisher and the Little Fish.txt": {
+        "general": 0.0,
+        "entities": {
+            "fisher": 0.0
+        }
+    },
+    "The Fisher.txt": {
+        "general": -0.2,
+        "entities": {
+            "fisher": -0.8
+        }
+    },
+    "The Four Oxen and the Lion.txt": {
+        "general": -0.2,
+        "entities": {
+            "lion": 0.2
+        }
+    },
+    "The Fox and the Cat.txt": {
+        "general": -0.375,
+        "entities": {
+            "fox": 0.375,
+            "cat": 0.575,
+            "puss": -0.625
+        }
+    },
+    "The Fox and the Crow.txt": {
+        "general": 0.1111111111111111,
+        "entities": {
+            "fox": 0.1388888888888889,
+            "reynard": -0.1111111111111111,
+            "queen of birds": 0.3888888888888889,
+            "crow": 0.1388888888888889
+        }
+    },
+    "The Fox and the Goat.txt": {
+        "general": -0.2857142857142857,
+        "entities": {
+            "fox": -0.2142857142857143
+        }
+    },
+    "The Fox and the Grapes.txt": {
+        "general": -0.5714285714285714,
+        "entities": {
+            "fox": 0.5714285714285714
+        }
+    },
+    "The Fox and the Lion.txt": {
+        "general": -0.2,
+        "entities": {
+            "fox": 0.2,
+            "lion": 0.45
+        }
+    },
+    "The Fox and the Mask.txt": {
+        "general": -0.75,
+        "entities": {
+            "fox": 0.4166666666666667
+        }
+    },
+    "The Fox and the Mosquitoes.txt": {
+        "general": 0.0,
+        "entities": {
+            "fox": -0.5,
+            "hedgehog": -0.25
+        }
+    },
+    "The Fox and the Stork.txt": {
+        "general": -0.2222222222222222,
+        "entities": {
+            "fox": -0.20634920634920634,
+            "stork": -0.06349206349206349
+        }
+    },
+    "The Fox Without a Tail.txt": {
+        "general": -0.4444444444444444,
+        "entities": {
+            "fox": 0.4444444444444444
+        }
+    },
+    "The Fox, the Cock, and the Dog.txt": {
+        "general": 0.06666666666666667,
+        "entities": {
+            "fox": -0.4666666666666667,
+            "cock": -0.31666666666666665,
+            "king lion": -0.06666666666666667
+        }
+    },
+    "The Frog and the Ox.txt": {
+        "general": -0.23076923076923078,
+        "entities": {
+            "frog": -0.3692307692307692,
+            "ox": -0.019230769230769218,
+            "farmer white": 0.23076923076923078
+        }
+    },
+    "The Frogs Desiring a King.txt": {
+        "general": -0.4,
+        "entities": {
+            "jove": 0.2,
+            "mighty jove": 0.4,
+            "frogs": -0.028571428571428525
+        }
+    },
+    "The Goose With the Golden Eggs.txt": {
+        "general": -0.2857142857142857,
+        "entities": {
+            "goose with golden eggs": 0.14285714285714285,
+            "golden eggs": 0.0,
+            "goose": 0.0
+        }
+    },
+    "The Hare and the Tortoise.txt": {
+        "general": -0.2727272727272727,
+        "entities": {
+            "tortoise": -0.2987012987012987,
+            "hare": 0.0727272727272727,
+            "plodding": -0.7272727272727273
+        }
+    },
+    "The Hare With Many Friends.txt": {
+        "general": -0.25,
+        "entities": {
+            "hare": 0.0,
+            "ram": 0.25
+        }
+    },
+    "The Hares and the Frogs.txt": {
+        "general": -0.6,
+        "entities": {
+            "hares": 0.0
+        }
+    },
+    "The Hart and the Hunter.txt": {
+        "general": 0.3333333333333333,
+        "entities": {
+            "hart": -0.3333333333333333,
+            "hunter": -0.8333333333333333
+        }
+    },
+    "The Hart in the Ox-Stall.txt": {
+        "general": -0.2857142857142857,
+        "entities": {
+            "hart": -0.2142857142857143
+        }
+    },
+    "The Horse and the Ass.txt": {
+        "general": -0.4,
+        "entities": {
+            "horse": -0.09999999999999998,
+            "ass": -0.43333333333333335
+        }
+    },
+    "The Horse, Hunter, and Stag.txt": {
+        "general": 0.0,
+        "entities": {
+            "hunter": 0.0,
+            "horse": 0.0,
+            "stag": 0.0
+        }
+    },
+    "The Jay and the Peacock.txt": {
+        "general": -0.25,
+        "entities": {
+            "jay": -0.08333333333333331,
+            "jays": -0.75
+        }
+    },
+    "The Labourer and the Nightingale.txt": {
+        "general": -0.18181818181818182,
+        "entities": {
+            "labourer": -0.06818181818181818,
+            "nightingale": 0.18181818181818182,
+            "nay": -0.8181818181818181
+        }
+    },
+    "The Lion and the Mouse.txt": {
+        "general": 0.0,
+        "entities": {
+            "lion": -0.42857142857142855,
+            "mouse": -0.3333333333333333,
+            "o king": -0.3333333333333333,
+            "king of beasts": -0.2,
+            "beasts": 0.0
+        }
+    },
+    "The Lion and the Statue.txt": {
+        "general": -0.16666666666666666,
+        "entities": {
+            "lion": -0.08333333333333334,
+            "man": -0.16666666666666666,
+            "hercules": 0.16666666666666666
+        }
+    },
+    "The Lion in Love.txt": {
+        "general": 0.125,
+        "entities": {
+            "lion": 0.375,
+            "king of beasts": -0.725
+        }
+    },
+    "The Lion, the Fox, and the Beasts.txt": {
+        "general": -0.4444444444444444,
+        "entities": {
+            "lion": 0.0444444444444444,
+            "calf": 0.4444444444444444,
+            "fox": -0.05555555555555558
+        }
+    },
+    "The Lion’s Share.txt": {
+        "general": 0.125,
+        "entities": {
+            "lion": -0.125,
+            "fox": -0.625,
+            "wolf": -0.125,
+            "stag": -0.125,
+            "king of beasts": 0.375,
+            "humph": -1.125
+        }
+    },
+    "The Man and His Two Wives.txt": {
+        "general": 0.0,
+        "entities": {
+            "man": 0.0,
+            "wife": 0.3333333333333333
+        }
+    },
+    "The Man and the Satyr.txt": {
+        "general": -0.18181818181818182,
+        "entities": {
+            "satyr": 0.05681818181818182,
+            "man": -0.1515151515151515
+        }
+    },
+    "The Man and the Serpent.txt": {
+        "general": -0.5,
+        "entities": {
+            "man": 0.5,
+            "countryman": 0.5,
+            "farmer": -0.5,
+            "serpent": 0.0
+        }
+    },
+    "The Man and the Wood.txt": {
+        "general": -0.25,
+        "entities": {
+            "wood": 0.25,
+            "trees": -0.08333333333333331
+        }
+    },
+    "The Man and the Wooden God.txt": {
+        "general": -0.2857142857142857,
+        "entities": {
+            "man": -0.2142857142857143,
+            "wooden god": -0.3142857142857143
+        }
+    },
+    "The Man, the Boy, and the Donkey.txt": {
+        "general": -0.4,
+        "entities": {
+            "donkey": 0.10000000000000003,
+            "man": 0.275,
+            "boy": 0.23333333333333336
+        }
+    },
+    "The Milkmaid and Her Pail.txt": {
+        "general": -0.4,
+        "entities": {
+            "milkmaid": 0.4,
+            "farmer brown": 0.4,
+            "polly shaw": -0.09999999999999998
+        }
+    },
+    "The Miser and His Gold.txt": {
+        "general": -0.125,
+        "entities": {
+            "miser": -0.875,
+            "his gold": -0.5113636363636364,
+            "nay": 0.125
+        }
+    },
+    "The Mountains in Labour.txt": {
+        "general": -0.75,
+        "entities": {}
+    },
+    "The Nurse and the Wolf.txt": {
+        "general": -0.2222222222222222,
+        "entities": {
+            "nurse": -0.2777777777777778,
+            "wolf": 0.0222222222222222
+        }
+    },
+    "The Old Man and Death.txt": {
+        "general": -0.375,
+        "entities": {
+            "old man": 0.375,
+            "death": 0.375
+        }
+    },
+    "The Old Woman and the Wine-Jar.txt": {
+        "general": 0.0,
+        "entities": {
+            "old woman": 0.0,
+            "wine- jar": 0.25
+        }
+    },
+    "The One-Eyed Doe.txt": {
+        "general": -0.6,
+        "entities": {
+            "one-eyed doe": -0.4
+        }
+    },
+    "The Peacock and Juno.txt": {
+        "general": -0.5,
+        "entities": {
+            "juno": -0.5
+        }
+    },
+    "The Serpent and the File.txt": {
+        "general": -0.75,
+        "entities": {}
+    },
+    "The Shepherd’s Boy.txt": {
+        "general": 0.125,
+        "entities": {
+            "shepherd ’s boy": 0.05681818181818182,
+            "shepherd boy": 0.0,
+            "wolf": 0.04166666666666666
+        }
+    },
+    "The Sick Lion.txt": {
+        "general": -0.8333333333333334,
+        "entities": {
+            "sick lion": -0.023809523809523725,
+            "bull": -0.16666666666666663
+        }
+    },
+    "The Swallow and the Other Birds.txt": {
+        "general": -0.375,
+        "entities": {
+            "swallow": 0.041666666666666685
+        }
+    },
+    "The Tortoise and the Birds.txt": {
+        "general": 0.16666666666666666,
+        "entities": {
+            "crow": 0.8333333333333334,
+            "eagle": 0.23333333333333336,
+            "tortoise": 0.5
+        }
+    },
+    "The Town Mouse and the Country Mouse.txt": {
+        "general": 0.1111111111111111,
+        "entities": {
+            "town mouse": 0.006535947712418305,
+            "cousin": 0.1388888888888889
+        }
+    },
+    "The Tree and the Reed.txt": {
+        "general": -0.42857142857142855,
+        "entities": {
+            "reed": -0.32142857142857145
+        }
+    },
+    "The Trumpeter Taken Prisoner.txt": {
+        "general": -0.2,
+        "entities": {}
+    },
+    "The Two Crabs.txt": {
+        "general": 0.16666666666666666,
+        "entities": {}
+    },
+    "The Two Fellows and the Bear.txt": {
+        "general": -0.5714285714285714,
+        "entities": {
+            "bear": 0.5714285714285714,
+            "master bruin": 0.5714285714285714
+        }
+    },
+    "The Two Pots.txt": {
+        "general": -0.6,
+        "entities": {}
+    },
+    "The Wind and the Sun.txt": {
+        "general": -0.125,
+        "entities": {
+            "sun": 0.325
+        }
+    },
+    "The Wolf and the Crane.txt": {
+        "general": -0.3,
+        "entities": {
+            "wolf": -0.033333333333333326,
+            "crane": 0.04999999999999999
+        }
+    },
+    "The Wolf and the Kid.txt": {
+        "general": 0.16666666666666666,
+        "entities": {
+            "wolf": 0.5
+        }
+    },
+    "The Wolf and the Lamb.txt": {
+        "general": -0.75,
+        "entities": {
+            "wolf": -0.25,
+            "lamb": -0.050000000000000044,
+            "nay": -0.25,
+            "lambikin": -0.25
+        }
+    },
+    "The Wolf in Sheep’s Clothing.txt": {
+        "general": 0.25,
+        "entities": {
+            "lamb": 0.75,
+            "wolf": 0.75
+        }
+    },
+    "The Woodman and the Serpent.txt": {
+        "general": -0.3333333333333333,
+        "entities": {
+            "woodman": 0.3333333333333333,
+            "serpent": -0.06666666666666671
+        }
+    },
+    "The Young Thief and His Mother.txt": {
+        "general": -0.3333333333333333,
+        "entities": {
+            "young thief": 0.3333333333333333,
+            "his mother": 0.3333333333333333,
+            "man": 0.3333333333333333
+        }
+    }
+}
