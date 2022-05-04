@@ -55,9 +55,11 @@ def get_aspect_descriptors_1(character_list, text):
 		categories = []
 		for i in taggedList:
 			if(i[1]=='JJ' or i[1]=='NN' or i[1]=='JJR' or i[1]=='NNS' or i[1]=='RB'):
-
-				featureList.append(list(i)) # For features for each sentence
-				totalfeatureList.append(list(i)) # Stores the features of all the sentences in the text
+				
+				# For features for each sentence
+				featureList.append(list(i))
+				# Stores the features of all the sentences in the text
+				totalfeatureList.append(list(i))
 				categories.append(i[0])
 
 		for i in featureList:
@@ -69,8 +71,6 @@ def get_aspect_descriptors_1(character_list, text):
 					else:
 						filist.append(j[0])
 			fcluster.append([i[0], filist])
-
-			print([i[0], filist])
 			
 	for i in totalfeatureList:
 		dic[i[0]] = i[1]
@@ -106,22 +106,16 @@ def get_aspect_descriptors_2(character_list, text):
 	return aspects
 
 # %%
-text_1 = "The water is dirty. Martin was horrible."
-text_2 = """
-There was once a Bald Man who sat down after work on a
-hot summer’s day. A Fly came up and kept buzzing about
-his bald pate, and stinging him from time to time. The Man
-aimed a blow at his little enemy, but acks palm came on his
-head instead; again the Fly tormented him, but this time
-the Man was wiser and said:
-'You will only injure yourself if you take notice of despicable enemies.'"""
+text_1 = "The pool is great but the water is very cold."
+text_2 = """There was Soon the Lion was let loose from his den,
+and rushed bounding and roaring towards his victim.'"""
 text_1 = text_1.replace("\n\n", " ").replace("\n", " ")
 text_2 = text_2.replace("\n\n", " ").replace("\n", " ")
 
 
-print(get_aspect_descriptors_1(['water', 'martin'], text_1))
-print(get_aspect_descriptors_2(['water', 'martin'], text_1))
-print(get_aspect_descriptors_1(['man', 'fly'], text_2))
-print(get_aspect_descriptors_2(['man', 'fly'], text_2))
+print(get_aspect_descriptors_1(['pool', 'water'], text_1))
+#print(get_aspect_descriptors_2(['water', 'martin'], text_1))
+print(get_aspect_descriptors_1(['lion'], text_2))
+#print(get_aspect_descriptors_2(['man', 'fly'], text_2))
 
 # %%
