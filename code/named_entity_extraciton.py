@@ -5,7 +5,6 @@ import pandas as pd
 import numpy as np
 import stanza
 import spacy_stanza
-import timeit
 import json
 from nltk.corpus import stopwords
 
@@ -62,16 +61,12 @@ def get_common_entities_spacy(text):
 	return oc
 
 def get_common_entities_stanza(text):
+    # Return list of the most common characters in the story 
+	# split into sentences
     doc = ner_spacy_stanza_tagger(text)
-    #all_entities = doc.ents
     all_entities =  []
-    # for token in doc:
-    #     if token.ent_type_ == "PERSON":
-    #         all_entities.append(token.text)
-    #     print(token.text, token.lemma_, token.pos_, token.dep_, token.ent_type_)
 
     for index, token in enumerate(doc):
-        # print(index, token.text, token.ent_type_)
         stopwords = ["and", "a"]
         if token.ent_type_ == "PERSON" and token.text.lower() not in stopwords:
             current_person = []
@@ -93,12 +88,10 @@ def get_common_entities_stanza(text):
             if not flag:
                 all_entities.append(current_person)
 
-    #print("Unprocessed -> ", all_entities)
     # Transform Span object to list, make lowercase
     filtered_list = [entity.lower() for entity in all_entities]
     # Unify occurences
     filtered_list = list(dict.fromkeys(filtered_list))
-    #...
 
     return filtered_list
 
@@ -128,53 +121,6 @@ if (novel is None):
 #print(stops)
 
 # %%
-# =========== PERFORMANCE ANALYSIS ===========
-import os
-def get_book_string(file_path):
-	with open(file_path, 'r', encoding='utf8') as file:
-		return file.read().rstrip()
-
-short_stories_path = "../material/short_stories_corpus/"
-medium_stories_path = "../material/medium_stories_corpus/"
-litbank_stories_path = "../material/litbank_corpus/"
-
-files = os.listdir(litbank_stories_path)
-
-def get_performance(model):
-    performance_model = {}
-    for file in files:
-        print(file)
-        performance = {}
-        novel = get_book_string(litbank_stories_path + file)
-        start = timeit.default_timer()
-        if model == 'stanza':
-            entities = get_common_entities_stanza(novel)
-        elif model == 'spacy':
-            entities = get_common_entities_spacy(novel)
-        else:
-            print("Enter either stanza or spacy")
-            exit()
-        occurences = {}
-        for entity in entities:
-            occurences[entity] = novel.lower().count(entity)
-        stop = timeit.default_timer()
-        performance['entities'] = occurences
-        performance['runtime'] = stop - start
-        performance_model[file] = performance
-        print(performance)
-        # break
-    return performance_model
-
-# performance_stanza = get_performance('stanza')
-# performance_spacy = get_performance('spacy')
-
-#with open("../results/performance_stanza.json", "w+", encoding="utf-8") as outfile:
-#    json.dump(performance_stanza, outfile, indent=4, ensure_ascii=False)
-
-# with open("../results/performance_spacy.json", "w+", encoding="utf-8") as outfile:
-#     json.dump(performance_spacy, outfile, indent=4, ensure_ascii=False)
-
-# %%
 import spacy
 from nltk.tokenize import sent_tokenize
 import itertools
@@ -188,7 +134,7 @@ filename = "list.csv"
 colname = "sentences"
 sentences = sent_tokenize(novel)
 entities = get_common_entities_stanza(novel) # all lowercase!
-print(entities)
+# print(entities)
 
 # Write all sentences to .csv
 list_df = pd.DataFrame(columns=[colname])

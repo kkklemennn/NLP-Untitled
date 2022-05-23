@@ -1,6 +1,50 @@
-import pandas as pd
+import sys
 import numpy as np
 import json
+import os
+import timeit
+
+from named_entity_extraciton import get_book_string, get_common_entities_stanza, get_common_entities_spacy
+
+short_stories_path = "../material/short_stories_corpus/"
+medium_stories_path = "../material/medium_stories_corpus/"
+litbank_stories_path = "../material/litbank_corpus/"
+
+def get_performance(model, stories_path):
+    files = os.listdir(stories_path)
+    performance_model = {}
+    for file in files:
+        # print(file)
+        performance = {}
+        novel = get_book_string(stories_path + file)
+        start = timeit.default_timer()
+        if model == 'stanza':
+            entities = get_common_entities_stanza(novel)
+        elif model == 'spacy':
+            entities = get_common_entities_spacy(novel)
+        else:
+            print("Enter either stanza or spacy")
+            exit()
+        occurences = {}
+        for entity in entities:
+            occurences[entity] = novel.lower().count(entity)
+        stop = timeit.default_timer()
+        performance['entities'] = occurences
+        performance['runtime'] = stop - start
+        performance_model[file] = performance
+        # print(performance)
+        # break
+    return performance_model
+
+def generate_performance_results(stories_path):
+    files = os.listdir(stories_path)
+    current_model = litbank_stories_path.split("/")[-2].split("_")[-2]
+    performance_stanza = get_performance('stanza')
+    performance_spacy = get_performance('spacy')
+    with open("../results/performance_stanza_" + current_model + ".json", "w+", encoding="utf-8") as outfile:
+       json.dump(performance_stanza, outfile, indent=4, ensure_ascii=False)
+    with open("../results/performance_spacy_" + current_model + ".json", "w+", encoding="utf-8") as outfile:
+        json.dump(performance_spacy, outfile, indent=4, ensure_ascii=False)
 
 def read_json(path):
     f = open(path,"r",encoding='utf-8')
@@ -65,8 +109,25 @@ def compare_entities(spacy_data, stanza_data):
 
 
 if __name__ == "__main__":
-    mode = 'litbank'
-    spacy_data, stanza_data = read_data(mode)
-    print(mode + " stories")
-    compare_running_time(spacy_data, stanza_data)
-    compare_entities(spacy_data, stanza_data)
+    
+    if (sys.argv[1] == "litbank" or sys.argv[1] == "short" or sys.argv[1] == "long"):
+        mode = sys.argv[1]
+        spacy_data, stanza_data = read_data(mode)
+        print(mode + " stories analysis")
+        compare_running_time(spacy_data, stanza_data)
+        compare_entities(spacy_data, stanza_data)
+    
+    elif (sys.argv[1] == "generate"):
+        # Generate JSON results for each corpus
+        generate_performance_results(short_stories_path)
+        generate_performance_results(medium_stories_path)
+        generate_performance_results(litbank_stories_path)
+    
+    else:
+        print("Invalid argument.")
+        print("Please input one of the following corpora to analyze performance:")
+        print('"short"')
+        print('"medium"')
+        print('"litbank"')
+        print("To generate results, input argument:")
+        print('"generate"')
