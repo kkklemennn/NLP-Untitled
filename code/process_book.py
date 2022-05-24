@@ -1,13 +1,17 @@
 # %%
 import argparse
+from pathy import Path
 
 parser = argparse.ArgumentParser(description='Build a knowledge base for a given text.')
 parser.add_argument("--corpus", type=str, default="litbank")
 parser.add_argument("--file", type=str, default="76_adventures_of_huckleberry_finn_brat.txt")
+parser.add_argument("--visualize", type=str, default="n", required=False)
 
 args = parser.parse_args()
 corpus = args.corpus
 file_name = args.file
+visualize = args.visualize
+visualize_flag = False
 
 if corpus == "litbank":
 	corpus_path = "../material/litbank_corpus/"
@@ -18,6 +22,9 @@ elif corpus == "short":
 else:
 	print("Unknown corpus.")
 	exit()
+
+if visualize == "y":
+	visualize_flag = True
 
 # =========== Read the book into a string ===========
 def get_book_string(file_path):
@@ -34,7 +41,7 @@ novel = get_book_string(corpus_path + file_name)
 
 
 # %%
-print("importing libraries..")
+print("Importing libraries...")
 from tokenize import String
 from matplotlib.pyplot import get
 import nltk
@@ -100,6 +107,12 @@ def get_common_entities_stanza(text):
 	filtered_list = list(dict.fromkeys(filtered_list))
 
 	return filtered_list
+
+def visualize_entities_spacy(novel):
+   html = spacy.displacy.render(nlp(novel), style="ent", options={"ents": ['PERSON', 'ORG']}, page=True)
+   output_path = Path("ner-visualization.html")
+   output_path.open("w", encoding="utf-8").write(html)
+
 # =====================================/ NER =====================================
 
 # ===================================== Sentiment analysis =====================================
@@ -190,7 +203,7 @@ def sentences_where_entities_mentioned(sentences, entities_split):
 			new_sentences.append(sentence)
 	return new_sentences
 
-#%%
+##%%
 # Determine if word pair contains two entites
 def pair_in_entities(entities, src, dst):
 	src = src.lower()
@@ -215,8 +228,8 @@ def pair_in_entities(entities, src, dst):
 def find_duplicate_occurence(occurences, char1, char2):
 	for ix, occurence in enumerate(occurences):
 		if char1 in occurence and char2 in occurence:
-			return ix;
-	return -1;
+			return ix
+	return -1
 
 def match_entities_for_graph(entities, edges, sentiments):
 	occurences = []
@@ -331,17 +344,19 @@ def find_cooccurences(novel, entities, sentiments):
 	#Temporarily save data
 	ct = collections.Counter(target_combinations)
 	pd.DataFrame([{'first' : i[0][0], 'second' : i[0][1], 'count' : i[1]} for i in ct.most_common()]).to_csv('output.csv', index=False, encoding="utf_8_sig")
-
-	net = create_network(entities, sentiments)
-	net.show("network.html")
-	return net
+	
+	try:
+		net = create_network(entities, sentiments)
+		net.show("cooccurrence-network.html")
+	except:
+		print("Could not draw cooccurrence network!")
 # =====================================/ Co-occurence =====================================
 
 
 
 # ===================================== Driver code =====================================
 
-print("=========== Detecting entities... ===========\n")
+print("=========== Detecting entities with Stanza... ===========\n")
 named_entities = get_common_entities_stanza(novel)
 print(named_entities)
 print("\n=========== Performing sentiment analysis... ===========\n")
@@ -349,6 +364,16 @@ sentiments = get_sentiments_for_characters_naive(named_entities, novel, True)
 print(sentiments)
 print("\n=========== Resolving cooccurence... ===========\n")
 find_cooccurences(novel, named_entities, sentiments)
-print("You can view visual representation of the data by viewing the network.html file.\n\n")
+print("You can view the visual representation of character co-occurence by viewing the cooccurrence-network.html file.\n")
+print("\n=========== Visualizing NER with Spacy... ===========\n")
+visualize_entities_spacy(novel)
+print("You can view the visual representation of named entity recognition by viewing the ner-visualization.html\n\n")
 
+if visualize_flag:
+	import os
+	try:
+		os.system("start cooccurrence-network.html")
+		os.system("start ner-visualization.html")
+	except:
+		print("Could not open visualizations automatically.")
 # %%
