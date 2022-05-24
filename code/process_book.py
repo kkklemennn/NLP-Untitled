@@ -283,9 +283,9 @@ def interval_to_hex(number):
 		return "#ffcccc"
 	elif number > -0.3 :
 		return "#ff9999"
-	elif number < -0.5 :
+	elif number  -0.5 :
 		return "#ff6666"
-	elif number < -0.7 :
+	elif number > -0.7 :
 		return "#ff3333"
 
 def create_network(entities, sentiments):
@@ -307,6 +307,18 @@ def create_network(entities, sentiments):
 		net.add_node(title1, title1, title=title1, color=interval_to_hex(pair[2]))
 		net.add_node(title2, title2, title=title2, color=interval_to_hex(pair[3]))
 		net.add_edge(title1, title2, value=interval_to_hex(pair[4]))
+	
+	# Add non linked entities as sole nodes
+	for entity in entities:
+		flag = False
+		for entry in network_list:
+			if entry[0] == entity or entry[1] == entity:
+				flag = True
+				break
+		if not flag:
+			sentiment = round(sentiments[entity]['avg_sentiment'],3)
+			title1 = "{name} ({sentiment})".format(name=entity, sentiment=sentiment)
+			net.add_node(title1, title=title1, color=interval_to_hex(sentiment))
 
 	return net
 
@@ -345,11 +357,19 @@ def find_cooccurences(novel, entities, sentiments):
 	ct = collections.Counter(target_combinations)
 	pd.DataFrame([{'first' : i[0][0], 'second' : i[0][1], 'count' : i[1]} for i in ct.most_common()]).to_csv('output.csv', index=False, encoding="utf_8_sig")
 	
-	try:
-		net = create_network(entities, sentiments)
+	if len(entities)==1:
+		entity = entities[0]
+		sentiment = round(sentiments[entity]['avg_sentiment'],3)
+		net = Network(height="1000px", width="95%", bgcolor="#FFFFFF", font_color="black", notebook=True)
+		title1 = "{name} ({sentiment})".format(name=entity, sentiment=sentiment)
+		net.add_node(title1, title=title1, color=interval_to_hex(sentiment))
 		net.show("cooccurrence-network.html")
-	except:
-		print("Could not draw cooccurrence network!")
+	else:	
+		try:
+			net = create_network(entities, sentiments)
+			net.show("cooccurrence-network.html")
+		except:
+			print("Could not draw cooccurrence network!")
 # =====================================/ Co-occurence =====================================
 
 
