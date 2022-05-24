@@ -108,9 +108,9 @@ Example NER visualization and co-occurrence graph.
 
 "Good" characters are marked as green nodes, "bad" characters are marked as red nodes. Stronger co-occurence between entities is denoted by thicker node connections.
 
-<img src="./results/androcles.png" width="480">
+<img src="./results/androcles.jpg" width="480">
 
-![Alt text](./results/androclesgraph.png?raw)
+![Alt text](./results/androclesgraph.jpg?raw)
 
 ### Performance testing
 For generating performance results, that are located in folder results, run the code:
