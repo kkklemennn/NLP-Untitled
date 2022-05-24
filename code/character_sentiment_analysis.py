@@ -1,17 +1,16 @@
-# %%
+from unicodedata import name
 import nltk
-import spacy
-import pandas as pd
+import json
+import os
 import numpy as np
 import stanza
-import spacy_stanza
 from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize
+from afinn import Afinn
 
 # StanfordNLP sentiment
 stanza_sentiment = stanza.Pipeline(lang='en', processors='tokenize,sentiment', use_gpu=False)
 
-#%%
 def get_sentiments_for_characters_naive(character_list, text, normalize):
 	"""
 	Get sentiments for the character list in the text.
@@ -61,28 +60,12 @@ def get_sentiments_for_characters_naive(character_list, text, normalize):
 			sentiments[key]['avg_sentiment'] = sum(sentiments[key]['sentiments']) / len((sentiments[key]['sentiments']))
 			if normalize:
 				sentiments[key]['avg_sentiment'] -= sentiments['stats']['avg_sentiment']
-
-
 	return sentiments
-
-
 
 
 def get_book_string(file_path):
 	with open(file_path, 'r', encoding="utf8") as file:
 		return file.read().replace('\n', ' ')
-	
-
-# %%
-# =========== SENTIMENT USING AFINN ===========
-from afinn import Afinn
-import json
-import os
-short_stories_path = "../material/short_stories_corpus/"
-medium_stories_path = "../material/medium_stories_corpus/"
-litbank_stories_path = "../material/litbank_corpus/"
-
-model = "stanza"
 
 def read_json(path):
     f = open(path,"r",encoding='utf-8')
@@ -94,7 +77,6 @@ def get_entities(book, model):
 	data = read_json('../results/performance_' + model + "_" + corpus + '.json')
 	entities = list(data[book.split('/')[-1]]['entities'].keys())
 	return entities
-
 
 def get_sentiment(novel, entities):
 	afinn = Afinn()
@@ -118,54 +100,59 @@ def get_sentiment(novel, entities):
 	sentiment_dict["entities"] = sentiment
 	return sentiment_dict
 
-files = os.listdir(short_stories_path)
-sentiments = {}
-for index, file in enumerate(files):
-	novel = get_book_string(short_stories_path + file)
-	entities = get_entities(short_stories_path + file, model)
-	sentiments[file] = get_sentiment(novel, entities)
+# =========== SENTIMENT USING AFINN ===========
 
-with open("../results/sentiments_stanza_short_afinn.json", "w+", encoding="utf-8") as outfile:
-    json.dump(sentiments, outfile, indent=4, ensure_ascii=False)
+def generate_sentiment_results_afinn(stories_path):
+	current_model = stories_path.split("/")[-2].split("_")[0]
+	print("GENERATING SENTIMENT ANALYSIS RESULTS FOR " + current_model.upper() + " STORIES WITH STANZA")
+	model = "stanza"
+	files = os.listdir(stories_path)
+	sentiments = {}
+	for index, file in enumerate(files):
+		novel = get_book_string(stories_path + file)
+		entities = get_entities(stories_path + file, model)
+		sentiments[file] = get_sentiment(novel, entities)
+
+	with open("../results/sentiments_stanza_" + current_model + "_afinn.json", "w+", encoding="utf-8") as outfile:
+		json.dump(sentiments, outfile, indent=4, ensure_ascii=False)
+	print("DONE GENERATING")
 
 
-# %%
 # =========== SENTIMENT USING STANZA ===========
 
-model = "stanza"
+def generate_sentiment_results_stanza(stories_path):
+	current_model = stories_path.split("/")[-2].split("_")[0]
+	print("GENERATING SENTIMENT ANALYSIS RESULTS FOR " + current_model.upper() + " STORIES WITH STANZA")
+	model = "stanza"
+	files = os.listdir(stories_path)
+	sentiments = {}
+	for index, file in enumerate(files):
+		print(file)
+		sentiments[file] = {}
+		novel = get_book_string(stories_path + file)
+		entities = get_entities(stories_path + file, model)
+		sentiments_normalized = get_sentiments_for_characters_naive(entities, novel, True)
+		sentiments[file]['general'] = sentiments_normalized['stats']['avg_sentiment']
+		sentiment = {}
+		for entity in entities:
+			if entity in sentiments_normalized: sentiment[entity] = sentiments_normalized[entity]['avg_sentiment']
+			else: sentiment[entity] = 0.0
+		sentiments[file]['entities'] = sentiment
+		# if index > 0: break
 
-files = os.listdir(litbank_stories_path)
-sentiments = {}
-for index, file in enumerate(files):
-	print(file)
-	sentiments[file] = {}
-	novel = get_book_string(litbank_stories_path + file)
-	entities = get_entities(litbank_stories_path + file, model)
-	sentiments_normalized = get_sentiments_for_characters_naive(entities, novel, True)
-	sentiments[file]['general'] = sentiments_normalized['stats']['avg_sentiment']
-	sentiment = {}
-	for entity in entities:
-		if entity in sentiments_normalized: sentiment[entity] = sentiments_normalized[entity]['avg_sentiment']
-		else: sentiment[entity] = 0.0
-	sentiments[file]['entities'] = sentiment
-	# if index > 0: break
-
-with open("../results/sentiments_stanza_litbank_stanza.json", "w+", encoding="utf-8") as outfile:
-    json.dump(sentiments, outfile, indent=4, ensure_ascii=False)
-
-
-# def print_stanza_sentiments(sentiments):
-# 	if (sentiments is None):
-# 		print("Sentiment analysis failed.")
-# 	else:
-# 		print("Number of sentences :", sentiments["stats"]["num_sentences"])
-# 		print("average Sentiment :", sentiments["stats"]["avg_sentiment"])
-# 		for key in sentiments:
-# 			if key != 'stats':
-# 				print("Stats for character(avg) >>",key, "<< ", sentiments[key]['avg_sentiment'] ) 
+	with open("../results/sentiments_stanza_" + current_model + "_stanza.json", "w+", encoding="utf-8") as outfile:
+		json.dump(sentiments, outfile, indent=4, ensure_ascii=False)
+	print("DONE GENERATING")
 
 
-# print("========= ", file_name," =========")
-# print_stanza_sentiments(sentiments_normalized)
+if __name__ == "__main__":
+	short_stories_path = "../material/short_stories_corpus/"
+	medium_stories_path = "../material/medium_stories_corpus/"
+	litbank_stories_path = "../material/litbank_corpus/"
 
-# %%
+	generate_sentiment_results_stanza(short_stories_path)
+	generate_sentiment_results_stanza(medium_stories_path)
+	generate_sentiment_results_stanza(litbank_stories_path)
+	generate_sentiment_results_afinn(short_stories_path)
+	generate_sentiment_results_afinn(medium_stories_path)
+	generate_sentiment_results_afinn(litbank_stories_path)

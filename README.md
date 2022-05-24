@@ -12,7 +12,7 @@ This folder contains all the necessary code to reproduce the results obtained in
 - **character_sentiment_analysis.py** contains code to perform sentiment analysis for provided list of fiction characters
 - **character_sentiment_aspect_experimental.py** contains code we used to perform Part-Of-Speech tagging and Dependency Parsing aspect based sentiment analysis, but without good results
 - **named_entity_extraction.py** contains code used to read the _.txt_ books and perform basic text preprocessing and character extraction. This file currently contains the character co-occurence calculation and co-occurence visualization.
-- **performance_analysis.py** contains code used to run tests of different models and methods for character extraction and sentiment analysis, Example `python performance_analysis.py litbank`
+- **performance_analysis.py** contains code used to run tests of different models and methods for character extraction and sentiment analysis
 
 ### Material
 
@@ -36,6 +36,14 @@ pip install -r requirements.txt
 ```
 
 ## Usage
+
+For generating performance results, that are located in folder results, run the code:
+`python performance_analysis.py generate`
+For comparing different performance results between spacy and stanza, as seen in report table 1, run the performance_analysis.py with the argument being the corpus you want to analyze. For example for comparing performance of spacy and stanza on litbank corpus run:
+`python performance_analysis.py litbank`
+
+For generating sentiment results, that are located in folder results, run the code:
+`python character_sentiment_analysis.py`
 
 ```python
 import foobar

@@ -38,7 +38,7 @@ def get_performance(model, stories_path):
 
 def generate_performance_results(stories_path):
     files = os.listdir(stories_path)
-    current_model = litbank_stories_path.split("/")[-2].split("_")[-2]
+    current_model = stories_path.split("/")[-2].split("_")[-0]
     performance_stanza = get_performance('stanza')
     performance_spacy = get_performance('spacy')
     with open("../results/performance_stanza_" + current_model + ".json", "w+", encoding="utf-8") as outfile:
