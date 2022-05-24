@@ -4,7 +4,7 @@ import json
 import os
 import timeit
 
-from named_entity_extraciton import get_book_string, get_common_entities_stanza, get_common_entities_spacy
+from named_entity_extraction import get_book_string, get_common_entities_stanza, get_common_entities_spacy
 
 short_stories_path = "../material/short_stories_corpus/"
 medium_stories_path = "../material/medium_stories_corpus/"

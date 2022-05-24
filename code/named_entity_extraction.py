@@ -107,16 +107,17 @@ short_stories_path = "../material/short_stories_corpus/"
 medium_stories_path = "../material/medium_stories_corpus/"
 litbank_stories_path = "../material/litbank_corpus/"
 
-file_name = "78_tarzan_of_the_apes_brat.txt" #174_the_picture_of_dorian_gray_brat.txt
+file_name = "Belling the Cat.txt" #174_the_picture_of_dorian_gray_brat.txt
 # =========== Read the book into a string ===========
-novel = get_book_string(litbank_stories_path + file_name)
+novel = get_book_string(short_stories_path + file_name)
 if (novel is None):
 	print("File was not found. Please check if the file exists or correct your path.")
 	exit()
 
 #print("file string ->", novel[0:50])
-#named_entities = get_common_entities_spacy(novel)
-# print(get_common_entities_stanza(novel))
+named_entities = get_common_entities_spacy(novel)
+print(named_entities)
+print(get_common_entities_stanza(novel))
 #stops = set(stopwords.words('english'))
 #print(stops)
 

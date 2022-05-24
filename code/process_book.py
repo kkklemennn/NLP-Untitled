@@ -306,7 +306,7 @@ def create_network(entities, sentiments):
 		title2 = "{name} ({sentiment})".format(name=pair[1], sentiment=round(pair[3], 3))
 		net.add_node(title1, title1, title=title1, color=interval_to_hex(pair[2]))
 		net.add_node(title2, title2, title=title2, color=interval_to_hex(pair[3]))
-		net.add_edge(title1, title2, value=interval_to_hex(pair[4]))
+		net.add_edge(title1, title2, value=pair[4], color='gray')
 	
 	# Add non linked entities as sole nodes
 	for entity in entities:
